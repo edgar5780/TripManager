@@ -15,15 +15,11 @@
 		6DAE5EC12347E79500C6FFFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DAE5EC02347E79500C6FFFA /* Assets.xcassets */; };
 		6DAE5EC42347E79500C6FFFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DAE5EC32347E79500C6FFFA /* Preview Assets.xcassets */; };
 		6DAE5EC72347E79500C6FFFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DAE5EC52347E79500C6FFFA /* LaunchScreen.storyboard */; };
-		6DAE5ED22347E79500C6FFFA /* TripManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5ED12347E79500C6FFFA /* TripManagerTests.swift */; };
-		6DAE5EDD2347E79500C6FFFA /* TripManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5EDC2347E79500C6FFFA /* TripManagerUITests.swift */; };
 		6DAE5EF82347E7DB00C6FFFA /* TripManagerDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAE5EEF2347E7DB00C6FFFA /* TripManagerDomain.framework */; };
-		6DAE5EFF2347E7DB00C6FFFA /* TripManagerDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5EFE2347E7DB00C6FFFA /* TripManagerDomainTests.swift */; };
 		6DAE5F012347E7DB00C6FFFA /* TripManagerDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DAE5EF12347E7DB00C6FFFA /* TripManagerDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DAE5F042347E7DB00C6FFFA /* TripManagerDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAE5EEF2347E7DB00C6FFFA /* TripManagerDomain.framework */; };
 		6DAE5F052347E7DB00C6FFFA /* TripManagerDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAE5EEF2347E7DB00C6FFFA /* TripManagerDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6DAE5F1B2347E7E700C6FFFA /* TripManagerData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAE5F122347E7E700C6FFFA /* TripManagerData.framework */; };
-		6DAE5F222347E7E700C6FFFA /* TripManagerDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5F212347E7E700C6FFFA /* TripManagerDataTests.swift */; };
 		6DAE5F242347E7E700C6FFFA /* TripManagerData.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DAE5F142347E7E700C6FFFA /* TripManagerData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DAE5F272347E7E700C6FFFA /* TripManagerData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAE5F122347E7E700C6FFFA /* TripManagerData.framework */; };
 		6DAE5F282347E7E700C6FFFA /* TripManagerData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAE5F122347E7E700C6FFFA /* TripManagerData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -91,6 +87,13 @@
 			remoteGlobalIDString = 6DAE5F112347E7E700C6FFFA;
 			remoteInfo = TripManagerData;
 		};
+		6DAE5F322347ED0500C6FFFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DAE5EAF2347E79400C6FFFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DAE5EEE2347E7DB00C6FFFA;
+			remoteInfo = TripManagerDomain;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -129,22 +132,18 @@
 		6DAE5EC62347E79500C6FFFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DAE5EC82347E79500C6FFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DAE5ECD2347E79500C6FFFA /* TripManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DAE5ED12347E79500C6FFFA /* TripManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripManagerTests.swift; sourceTree = "<group>"; };
 		6DAE5ED32347E79500C6FFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DAE5ED82347E79500C6FFFA /* TripManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DAE5EDC2347E79500C6FFFA /* TripManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripManagerUITests.swift; sourceTree = "<group>"; };
 		6DAE5EDE2347E79500C6FFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DAE5EEF2347E7DB00C6FFFA /* TripManagerDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TripManagerDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DAE5EF12347E7DB00C6FFFA /* TripManagerDomain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripManagerDomain.h; sourceTree = "<group>"; };
 		6DAE5EF22347E7DB00C6FFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DAE5EF72347E7DB00C6FFFA /* TripManagerDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripManagerDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DAE5EFE2347E7DB00C6FFFA /* TripManagerDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripManagerDomainTests.swift; sourceTree = "<group>"; };
 		6DAE5F002347E7DB00C6FFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DAE5F122347E7E700C6FFFA /* TripManagerData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TripManagerData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DAE5F142347E7E700C6FFFA /* TripManagerData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripManagerData.h; sourceTree = "<group>"; };
 		6DAE5F152347E7E700C6FFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DAE5F1A2347E7E700C6FFFA /* TripManagerDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripManagerDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DAE5F212347E7E700C6FFFA /* TripManagerDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripManagerDataTests.swift; sourceTree = "<group>"; };
 		6DAE5F232347E7E700C6FFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DAE5F302347EA1D00C6FFFA /* TripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListView.swift; sourceTree = "<group>"; };
 		74C2163935D7DDA70EC087B3 /* Pods_TripManagerDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripManagerDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -277,7 +276,6 @@
 		6DAE5ED02347E79500C6FFFA /* TripManagerTests */ = {
 			isa = PBXGroup;
 			children = (
-				6DAE5ED12347E79500C6FFFA /* TripManagerTests.swift */,
 				6DAE5ED32347E79500C6FFFA /* Info.plist */,
 			);
 			path = TripManagerTests;
@@ -286,7 +284,6 @@
 		6DAE5EDB2347E79500C6FFFA /* TripManagerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				6DAE5EDC2347E79500C6FFFA /* TripManagerUITests.swift */,
 				6DAE5EDE2347E79500C6FFFA /* Info.plist */,
 			);
 			path = TripManagerUITests;
@@ -304,7 +301,6 @@
 		6DAE5EFD2347E7DB00C6FFFA /* TripManagerDomainTests */ = {
 			isa = PBXGroup;
 			children = (
-				6DAE5EFE2347E7DB00C6FFFA /* TripManagerDomainTests.swift */,
 				6DAE5F002347E7DB00C6FFFA /* Info.plist */,
 			);
 			path = TripManagerDomainTests;
@@ -322,7 +318,6 @@
 		6DAE5F202347E7E700C6FFFA /* TripManagerDataTests */ = {
 			isa = PBXGroup;
 			children = (
-				6DAE5F212347E7E700C6FFFA /* TripManagerDataTests.swift */,
 				6DAE5F232347E7E700C6FFFA /* Info.plist */,
 			);
 			path = TripManagerDataTests;
@@ -403,6 +398,7 @@
 				6DAE5EB52347E79400C6FFFA /* Resources */,
 				6DAE5F062347E7DB00C6FFFA /* Embed Frameworks */,
 				20E23D94F8D4A173A2EEE677 /* [CP] Embed Pods Frameworks */,
+				6DAE5F342347ED9600C6FFFA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -463,6 +459,7 @@
 				6DAE5EEB2347E7DB00C6FFFA /* Sources */,
 				6DAE5EEC2347E7DB00C6FFFA /* Frameworks */,
 				6DAE5EED2347E7DB00C6FFFA /* Resources */,
+				6DAE5F352347EDA200C6FFFA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -502,10 +499,12 @@
 				6DAE5F0E2347E7E700C6FFFA /* Sources */,
 				6DAE5F0F2347E7E700C6FFFA /* Frameworks */,
 				6DAE5F102347E7E700C6FFFA /* Resources */,
+				6DAE5F362347EDAA00C6FFFA /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6DAE5F332347ED0500C6FFFA /* PBXTargetDependency */,
 			);
 			name = TripManagerData;
 			productName = TripManagerData;
@@ -710,6 +709,57 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6DAE5F342347ED9600C6FFFA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		6DAE5F352347EDA200C6FFFA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		6DAE5F362347EDAA00C6FFFA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		852528FC7ED2E6FB1B216103 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -854,7 +904,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DAE5ED22347E79500C6FFFA /* TripManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -862,7 +911,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DAE5EDD2347E79500C6FFFA /* TripManagerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -877,7 +925,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DAE5EFF2347E7DB00C6FFFA /* TripManagerDomainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -892,7 +939,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DAE5F222347E7E700C6FFFA /* TripManagerDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -938,6 +984,11 @@
 			isa = PBXTargetDependency;
 			target = 6DAE5F112347E7E700C6FFFA /* TripManagerData */;
 			targetProxy = 6DAE5F252347E7E700C6FFFA /* PBXContainerItemProxy */;
+		};
+		6DAE5F332347ED0500C6FFFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DAE5EEE2347E7DB00C6FFFA /* TripManagerDomain */;
+			targetProxy = 6DAE5F322347ED0500C6FFFA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
