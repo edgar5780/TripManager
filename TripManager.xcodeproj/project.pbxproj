@@ -24,6 +24,14 @@
 		6DAE5F272347E7E700C6FFFA /* TripManagerData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAE5F122347E7E700C6FFFA /* TripManagerData.framework */; };
 		6DAE5F282347E7E700C6FFFA /* TripManagerData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAE5F122347E7E700C6FFFA /* TripManagerData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6DAE5F312347EA1D00C6FFFA /* TripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5F302347EA1D00C6FFFA /* TripListView.swift */; };
+		6DAE5F392347F11D00C6FFFA /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5F382347F11D00C6FFFA /* APIClient.swift */; };
+		6DAE5F3C2347F15500C6FFFA /* TripManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5F3B2347F15500C6FFFA /* TripManagerError.swift */; };
+		6DAE5F3E2347F35800C6FFFA /* APIClientImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5F3D2347F35800C6FFFA /* APIClientImp.swift */; };
+		6DAE5F412347F42600C6FFFA /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5F402347F42600C6FFFA /* Decoder.swift */; };
+		6DAE5F472347FD9E00C6FFFA /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5F462347FD9E00C6FFFA /* APIEndpoint.swift */; };
+		6DAE5F4B2347FEC700C6FFFA /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5F4A2347FEC700C6FFFA /* APIMethod.swift */; };
+		6DAE5F4D2347FFE700C6FFFA /* URLFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5F4C2347FFE700C6FFFA /* URLFactory.swift */; };
+		6DAE5F4F234802CB00C6FFFA /* URLComponents+TripManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5F4E234802CB00C6FFFA /* URLComponents+TripManager.swift */; };
 		85A13EA118B2D199BD126663 /* Pods_TripManagerDataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264E7221DE3A6DA05BF39B14 /* Pods_TripManagerDataTests.framework */; };
 		B3C7E617D7E6620B310B4FDD /* Pods_TripManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2E1FC708D18690DFE8512D /* Pods_TripManagerTests.framework */; };
 		BDD07FBBDB534D75BBDEBA18 /* Pods_TripManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE6CACAA032BB241EC6C49E /* Pods_TripManager.framework */; };
@@ -146,6 +154,14 @@
 		6DAE5F1A2347E7E700C6FFFA /* TripManagerDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripManagerDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DAE5F232347E7E700C6FFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DAE5F302347EA1D00C6FFFA /* TripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListView.swift; sourceTree = "<group>"; };
+		6DAE5F382347F11D00C6FFFA /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		6DAE5F3B2347F15500C6FFFA /* TripManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripManagerError.swift; sourceTree = "<group>"; };
+		6DAE5F3D2347F35800C6FFFA /* APIClientImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientImp.swift; sourceTree = "<group>"; };
+		6DAE5F402347F42600C6FFFA /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		6DAE5F462347FD9E00C6FFFA /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		6DAE5F4A2347FEC700C6FFFA /* APIMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
+		6DAE5F4C2347FFE700C6FFFA /* URLFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLFactory.swift; sourceTree = "<group>"; };
+		6DAE5F4E234802CB00C6FFFA /* URLComponents+TripManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+TripManager.swift"; sourceTree = "<group>"; };
 		74C2163935D7DDA70EC087B3 /* Pods_TripManagerDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripManagerDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0F50AA86255703CB71AADF /* Pods-TripManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripManager.debug.xcconfig"; path = "Target Support Files/Pods-TripManager/Pods-TripManager.debug.xcconfig"; sourceTree = "<group>"; };
 		9B154E0DBCD3604C9EBEF429 /* Pods-TripManager-TripManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripManager-TripManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-TripManager-TripManagerUITests/Pods-TripManager-TripManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -292,6 +308,7 @@
 		6DAE5EF02347E7DB00C6FFFA /* TripManagerDomain */ = {
 			isa = PBXGroup;
 			children = (
+				6DAE5F3A2347F12E00C6FFFA /* Models */,
 				6DAE5EF12347E7DB00C6FFFA /* TripManagerDomain.h */,
 				6DAE5EF22347E7DB00C6FFFA /* Info.plist */,
 			);
@@ -309,6 +326,10 @@
 		6DAE5F132347E7E700C6FFFA /* TripManagerData */ = {
 			isa = PBXGroup;
 			children = (
+				6DAE5F432347FD7800C6FFFA /* Models */,
+				6DAE5F422347F58A00C6FFFA /* Extensions */,
+				6DAE5F3F2347F41500C6FFFA /* Utils */,
+				6DAE5F372347F10000C6FFFA /* Network */,
 				6DAE5F142347E7E700C6FFFA /* TripManagerData.h */,
 				6DAE5F152347E7E700C6FFFA /* Info.plist */,
 			);
@@ -329,6 +350,57 @@
 				6DAE5F302347EA1D00C6FFFA /* TripListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		6DAE5F372347F10000C6FFFA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6DAE5F382347F11D00C6FFFA /* APIClient.swift */,
+				6DAE5F3D2347F35800C6FFFA /* APIClientImp.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6DAE5F3A2347F12E00C6FFFA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6DAE5F3B2347F15500C6FFFA /* TripManagerError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6DAE5F3F2347F41500C6FFFA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6DAE5F402347F42600C6FFFA /* Decoder.swift */,
+				6DAE5F4C2347FFE700C6FFFA /* URLFactory.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6DAE5F422347F58A00C6FFFA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6DAE5F4E234802CB00C6FFFA /* URLComponents+TripManager.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6DAE5F432347FD7800C6FFFA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6DAE5F452347FD8400C6FFFA /* API */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6DAE5F452347FD8400C6FFFA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6DAE5F462347FD9E00C6FFFA /* APIEndpoint.swift */,
+				6DAE5F4A2347FEC700C6FFFA /* APIMethod.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		9BBA18EF0E88A23FB5904042 /* Frameworks */ = {
@@ -554,6 +626,7 @@
 					};
 					6DAE5EEE2347E7DB00C6FFFA = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					6DAE5EF62347E7DB00C6FFFA = {
 						CreatedOnToolsVersion = 11.0;
@@ -561,9 +634,11 @@
 					};
 					6DAE5F112347E7E700C6FFFA = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					6DAE5F192347E7E700C6FFFA = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 						TestTargetID = 6DAE5EB62347E79400C6FFFA;
 					};
 				};
@@ -918,6 +993,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DAE5F3C2347F15500C6FFFA /* TripManagerError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -932,6 +1008,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DAE5F3E2347F35800C6FFFA /* APIClientImp.swift in Sources */,
+				6DAE5F412347F42600C6FFFA /* Decoder.swift in Sources */,
+				6DAE5F4D2347FFE700C6FFFA /* URLFactory.swift in Sources */,
+				6DAE5F392347F11D00C6FFFA /* APIClient.swift in Sources */,
+				6DAE5F472347FD9E00C6FFFA /* APIEndpoint.swift in Sources */,
+				6DAE5F4F234802CB00C6FFFA /* URLComponents+TripManager.swift in Sources */,
+				6DAE5F4B2347FEC700C6FFFA /* APIMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1122,6 +1205,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7F0F50AA86255703CB71AADF /* Pods-TripManager.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TripManager/Preview Content\"";
@@ -1143,6 +1227,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1E4DCB55C3860D5C7665931E /* Pods-TripManager.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TripManager/Preview Content\"";
@@ -1248,6 +1333,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 51A81E7B2631AFECF526B12F /* Pods-TripManagerDomain.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1265,6 +1351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.diazwho.TripManagerDomain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1276,6 +1363,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A3582B4868783041A2D61DFF /* Pods-TripManagerDomain.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1304,6 +1392,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD8BE2720F90AFFEE572968F /* Pods-TripManagerDomainTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9H4H2J4YMN;
 				INFOPLIST_FILE = TripManagerDomainTests/Info.plist;
@@ -1324,6 +1413,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 16DA8E9EFFE1420F6374B650 /* Pods-TripManagerDomainTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9H4H2J4YMN;
 				INFOPLIST_FILE = TripManagerDomainTests/Info.plist;
@@ -1344,6 +1434,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33A69AB19F90D7E033CDDDE0 /* Pods-TripManagerData.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1361,6 +1452,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.diazwho.TripManagerData;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1372,6 +1464,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 36ADEFD8274C70E0D1C8DB83 /* Pods-TripManagerData.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1400,6 +1493,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DCDD92F06331E8456FDFBA7C /* Pods-TripManagerDataTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9H4H2J4YMN;
 				INFOPLIST_FILE = TripManagerDataTests/Info.plist;
@@ -1410,6 +1505,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.diazwho.TripManagerDataTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TripManager.app/TripManager";
@@ -1420,6 +1516,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E8D59F9DD20CEFB5EAFD33C3 /* Pods-TripManagerDataTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9H4H2J4YMN;
 				INFOPLIST_FILE = TripManagerDataTests/Info.plist;
