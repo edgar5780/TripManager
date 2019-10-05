@@ -1,7 +1,6 @@
 # TripManager
 
 [![Build Status](https://app.bitrise.io/app/e5939ba07adf5d8f/status.svg?token=YWacZOjCTo7vmAcchraCnQ&branch=develop)](https://app.bitrise.io/app/e5939ba07adf5d8f)
-
 [![codecov](https://codecov.io/gh/diazwho/TripManager/branch/develop/graph/badge.svg?token=yoBEYgxrZZ)](https://codecov.io/gh/diazwho/TripManager)
 
 Simple trip manager for bus on demand solution. SEAT:CODE code test.
