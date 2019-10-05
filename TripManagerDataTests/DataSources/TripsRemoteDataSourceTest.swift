@@ -7,8 +7,8 @@
 //
 
 import XCTest
-import TripManagerDomain
 import Combine
+import TripManagerDomain
 @testable import TripManagerData
 
 class TripsRemoteDataSourceTest: XCTestCase {
@@ -37,7 +37,7 @@ class TripsRemoteDataSourceTest: XCTestCase {
                 expectation.fulfill()
             }
         }, receiveValue: { trips in
-            XCTAssertTrue(trips.count == 7)
+            XCTAssertEqual(trips.count, 7)
         }).store(in: &disposables!)
         wait(for: [expectation], timeout: 5.0)
     }
