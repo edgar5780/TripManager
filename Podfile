@@ -10,13 +10,10 @@ target 'TripManager' do
   globalPods
   target 'TripManagerTests' do
     inherit! :search_paths
-    # Pods for testing
   end
 
   target 'TripManagerUITests' do
-    # Pods for testing
   end
-
 end
 
 target 'TripManagerData' do
@@ -24,9 +21,7 @@ target 'TripManagerData' do
   globalPods
   target 'TripManagerDataTests' do
   	inherit! :search_paths
-    # Pods for testing
   end
-
 end
 
 target 'TripManagerDomain' do
@@ -34,6 +29,5 @@ target 'TripManagerDomain' do
   globalPods
   target 'TripManagerDomainTests' do
   	inherit! :search_paths
-    # Pods for testing
   end
 end
