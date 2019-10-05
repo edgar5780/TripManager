@@ -28,6 +28,7 @@ final class URLFactory {
     private func urlComponents(_ endpoint: APIEndpoint,
                                _ queryItems: [String: String]?) -> URLComponents {
         var urlComponents = URLComponents()
+        urlComponents.scheme = scheme
         urlComponents.host = host
         urlComponents.path = "\(path)\(endpoint.path())"
         if let queryItems = queryItems {
