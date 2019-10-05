@@ -1205,7 +1205,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7F0F50AA86255703CB71AADF /* Pods-TripManager.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TripManager/Preview Content\"";
@@ -1227,7 +1226,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1E4DCB55C3860D5C7665931E /* Pods-TripManager.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TripManager/Preview Content\"";
@@ -1392,7 +1390,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD8BE2720F90AFFEE572968F /* Pods-TripManagerDomainTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9H4H2J4YMN;
 				INFOPLIST_FILE = TripManagerDomainTests/Info.plist;
@@ -1413,7 +1410,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 16DA8E9EFFE1420F6374B650 /* Pods-TripManagerDomainTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9H4H2J4YMN;
 				INFOPLIST_FILE = TripManagerDomainTests/Info.plist;
@@ -1493,7 +1489,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DCDD92F06331E8456FDFBA7C /* Pods-TripManagerDataTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9H4H2J4YMN;
@@ -1516,7 +1511,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E8D59F9DD20CEFB5EAFD33C3 /* Pods-TripManagerDataTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9H4H2J4YMN;
