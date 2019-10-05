@@ -1,5 +1,5 @@
 //
-//  URLFactoryTests.swift
+//  URLFactoryTest.swift
 //  TripManagerDataTests
 //
 //  Created by Edgar Luis Diaz on 05/10/2019.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import TripManagerData
 
-class URLFactoryTests: XCTestCase {
+class URLFactoryTest: XCTestCase {
     let urlFactory = URLFactory()
 
     func testGenerateSimpleTripsURLRequest() {

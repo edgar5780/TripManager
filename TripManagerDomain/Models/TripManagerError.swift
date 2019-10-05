@@ -12,4 +12,5 @@ public enum TripManagerError: Error {
     case badRequest
     case parse(description: String)
     case api(description: String)
+    case fileNotFound
 }
