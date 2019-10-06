@@ -8,8 +8,7 @@
 
 import Foundation
 import Combine
-import TripManagerDomain
 
-protocol TripsRepository {
+public protocol TripsRepository {
     func getTrips() -> AnyPublisher<[Trip], TripManagerError>
 }
