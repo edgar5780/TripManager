@@ -21,6 +21,8 @@
 		6D0C20482348ED6D00D8D20B /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C20472348ED6D00D8D20B /* Stop.swift */; };
 		6D69352F234A807E0090D021 /* TripsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA8B2C23493AF20041F4C1 /* TripsRepository.swift */; };
 		6D693532234A80CC0090D021 /* TripsRepositoryMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D693531234A80CC0090D021 /* TripsRepositoryMockup.swift */; };
+		6D693534234A82560090D021 /* GetTripsUseCaseImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D693533234A82560090D021 /* GetTripsUseCaseImp.swift */; };
+		6D693536234A83EF0090D021 /* GetTripsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D693535234A83EF0090D021 /* GetTripsUseCase.swift */; };
 		6DAE5EBB2347E79400C6FFFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5EBA2347E79400C6FFFA /* AppDelegate.swift */; };
 		6DAE5EBD2347E79400C6FFFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5EBC2347E79400C6FFFA /* SceneDelegate.swift */; };
 		6DAE5EC12347E79500C6FFFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DAE5EC02347E79500C6FFFA /* Assets.xcassets */; };
@@ -133,6 +135,8 @@
 		6D0C20452348ED1F00D8D20B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		6D0C20472348ED6D00D8D20B /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
 		6D693531234A80CC0090D021 /* TripsRepositoryMockup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsRepositoryMockup.swift; sourceTree = "<group>"; };
+		6D693533234A82560090D021 /* GetTripsUseCaseImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTripsUseCaseImp.swift; sourceTree = "<group>"; };
+		6D693535234A83EF0090D021 /* GetTripsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTripsUseCase.swift; sourceTree = "<group>"; };
 		6DAE5EB72347E79400C6FFFA /* TripManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DAE5EBA2347E79400C6FFFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DAE5EBC2347E79400C6FFFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -270,6 +274,8 @@
 		6D69352D234A7FCB0090D021 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				6D693535234A83EF0090D021 /* GetTripsUseCase.swift */,
+				6D693533234A82560090D021 /* GetTripsUseCaseImp.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -905,8 +911,10 @@
 				6D0C20462348ED1F00D8D20B /* Location.swift in Sources */,
 				6D0C20422348EB6B00D8D20B /* TripStatus.swift in Sources */,
 				6DAE5F3C2347F15500C6FFFA /* TripManagerError.swift in Sources */,
+				6D693534234A82560090D021 /* GetTripsUseCaseImp.swift in Sources */,
 				6D0C20482348ED6D00D8D20B /* Stop.swift in Sources */,
 				6D693532234A80CC0090D021 /* TripsRepositoryMockup.swift in Sources */,
+				6D693536234A83EF0090D021 /* GetTripsUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
