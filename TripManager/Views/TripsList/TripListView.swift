@@ -24,10 +24,10 @@ struct TripListView: View {
                 if viewModel.dataSource.isEmpty {
                     emptySection
                 } else {
-                    tripssSection
+                    tripsSection
                 }
             }
-        }.edgesIgnoringSafeArea(.vertical)
+        }.edgesIgnoringSafeArea(.top)
     }
 
     var emptySection: some View {
@@ -36,7 +36,7 @@ struct TripListView: View {
         }
     }
 
-    var tripssSection: some View {
+    var tripsSection: some View {
         ForEach(viewModel.dataSource, content: TripListRowView.init(_:))
     }
 }
