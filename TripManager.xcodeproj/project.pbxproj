@@ -21,6 +21,7 @@
 		6D0C20462348ED1F00D8D20B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C20452348ED1F00D8D20B /* Location.swift */; };
 		6D0C20482348ED6D00D8D20B /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C20472348ED6D00D8D20B /* Stop.swift */; };
 		6D1AFAF5234A86E600EF8131 /* GetTripsUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AFAF4234A86E600EF8131 /* GetTripsUseCaseTest.swift */; };
+		6D1AFAF8234A952A00EF8131 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AFAF7234A952A00EF8131 /* MapView.swift */; };
 		6D69352F234A807E0090D021 /* TripsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA8B2C23493AF20041F4C1 /* TripsRepository.swift */; };
 		6D693532234A80CC0090D021 /* TripsRepositoryMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D693531234A80CC0090D021 /* TripsRepositoryMockup.swift */; };
 		6D693534234A82560090D021 /* GetTripsUseCaseImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D693533234A82560090D021 /* GetTripsUseCaseImp.swift */; };
@@ -153,6 +154,7 @@
 		6D0C20452348ED1F00D8D20B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		6D0C20472348ED6D00D8D20B /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
 		6D1AFAF4234A86E600EF8131 /* GetTripsUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTripsUseCaseTest.swift; sourceTree = "<group>"; };
+		6D1AFAF7234A952A00EF8131 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		6D693531234A80CC0090D021 /* TripsRepositoryMockup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsRepositoryMockup.swift; sourceTree = "<group>"; };
 		6D693533234A82560090D021 /* GetTripsUseCaseImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTripsUseCaseImp.swift; sourceTree = "<group>"; };
 		6D693535234A83EF0090D021 /* GetTripsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTripsUseCase.swift; sourceTree = "<group>"; };
@@ -310,6 +312,22 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
+		6D1AFAF6234A951300EF8131 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				6D1AFAF7234A952A00EF8131 /* MapView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		6D1AFAF9234A960A00EF8131 /* TripsList */ = {
+			isa = PBXGroup;
+			children = (
+				6DAE5F302347EA1D00C6FFFA /* TripListView.swift */,
+			);
+			path = TripsList;
+			sourceTree = "<group>";
+		};
 		6D69352D234A7FCB0090D021 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
@@ -426,7 +444,8 @@
 		6DAE5F2F2347E9E200C6FFFA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6DAE5F302347EA1D00C6FFFA /* TripListView.swift */,
+				6D1AFAF6234A951300EF8131 /* Custom */,
+				6D1AFAF9234A960A00EF8131 /* TripsList */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1010,6 +1029,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DAE5EBB2347E79400C6FFFA /* AppDelegate.swift in Sources */,
+				6D1AFAF8234A952A00EF8131 /* MapView.swift in Sources */,
 				6DAE5EBD2347E79400C6FFFA /* SceneDelegate.swift in Sources */,
 				6DAE5F312347EA1D00C6FFFA /* TripListView.swift in Sources */,
 			);
