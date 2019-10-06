@@ -10,15 +10,33 @@ import SwiftUI
 import MapKit
 
 struct TripListView: View {
-    private let viewModel: TripListViewModel
+    @ObservedObject private var viewModel: TripListViewModel
 
     init(_ viewModel: TripListViewModel) {
         self.viewModel = viewModel
+        viewModel.fetch()
     }
 
     var body: some View {
         VStack {
             MapView()
+            List {
+                if viewModel.dataSource.isEmpty {
+                    emptySection
+                } else {
+                    tripssSection
+                }
+            }
         }.edgesIgnoringSafeArea(.vertical)
+    }
+
+    var emptySection: some View {
+        Section {
+            Text("No results")
+        }
+    }
+
+    var tripssSection: some View {
+        ForEach(viewModel.dataSource, content: TripListRowView.init(_:))
     }
 }
