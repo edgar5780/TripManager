@@ -22,6 +22,12 @@
 		6D0C20482348ED6D00D8D20B /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C20472348ED6D00D8D20B /* Stop.swift */; };
 		6D1AFAF5234A86E600EF8131 /* GetTripsUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AFAF4234A86E600EF8131 /* GetTripsUseCaseTest.swift */; };
 		6D1AFAF8234A952A00EF8131 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AFAF7234A952A00EF8131 /* MapView.swift */; };
+		6D1AFAFD234A9A5300EF8131 /* Container+TripManagerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AFAFC234A9A5300EF8131 /* Container+TripManagerData.swift */; };
+		6D1AFB00234A9A9600EF8131 /* Container+TripManagerDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AFAFF234A9A9600EF8131 /* Container+TripManagerDomain.swift */; };
+		6D1AFB03234A9E0200EF8131 /* Container+TripManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AFB02234A9E0200EF8131 /* Container+TripManager.swift */; };
+		6D1AFB05234A9E7900EF8131 /* TripListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AFB04234A9E7900EF8131 /* TripListViewModel.swift */; };
+		6D1AFB08234AA0D700EF8131 /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AFB07234AA0D700EF8131 /* DependencyInjection.swift */; };
+		6D1AFB0A234AA22800EF8131 /* TripListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AFB09234AA22800EF8131 /* TripListCoordinator.swift */; };
 		6D69352F234A807E0090D021 /* TripsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA8B2C23493AF20041F4C1 /* TripsRepository.swift */; };
 		6D693532234A80CC0090D021 /* TripsRepositoryMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D693531234A80CC0090D021 /* TripsRepositoryMockup.swift */; };
 		6D693534234A82560090D021 /* GetTripsUseCaseImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D693533234A82560090D021 /* GetTripsUseCaseImp.swift */; };
@@ -47,7 +53,7 @@
 		6DAE5F472347FD9E00C6FFFA /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5F462347FD9E00C6FFFA /* APIEndpoint.swift */; };
 		6DAE5F4B2347FEC700C6FFFA /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5F4A2347FEC700C6FFFA /* APIMethod.swift */; };
 		6DAE5F4D2347FFE700C6FFFA /* URLFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5F4C2347FFE700C6FFFA /* URLFactory.swift */; };
-		6DAE5F4F234802CB00C6FFFA /* URLComponents+TripManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5F4E234802CB00C6FFFA /* URLComponents+TripManager.swift */; };
+		6DAE5F4F234802CB00C6FFFA /* URLComponents+TripManagerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5F4E234802CB00C6FFFA /* URLComponents+TripManagerData.swift */; };
 		6DEA8B22234937360041F4C1 /* PointResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA8B21234937360041F4C1 /* PointResponse.swift */; };
 		6DEA8B24234937450041F4C1 /* LocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA8B23234937450041F4C1 /* LocationResponse.swift */; };
 		6DEA8B26234937530041F4C1 /* StopResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA8B25234937530041F4C1 /* StopResponse.swift */; };
@@ -155,6 +161,12 @@
 		6D0C20472348ED6D00D8D20B /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
 		6D1AFAF4234A86E600EF8131 /* GetTripsUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTripsUseCaseTest.swift; sourceTree = "<group>"; };
 		6D1AFAF7234A952A00EF8131 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		6D1AFAFC234A9A5300EF8131 /* Container+TripManagerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+TripManagerData.swift"; sourceTree = "<group>"; };
+		6D1AFAFF234A9A9600EF8131 /* Container+TripManagerDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+TripManagerDomain.swift"; sourceTree = "<group>"; };
+		6D1AFB02234A9E0200EF8131 /* Container+TripManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+TripManager.swift"; sourceTree = "<group>"; };
+		6D1AFB04234A9E7900EF8131 /* TripListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListViewModel.swift; sourceTree = "<group>"; };
+		6D1AFB07234AA0D700EF8131 /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
+		6D1AFB09234AA22800EF8131 /* TripListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListCoordinator.swift; sourceTree = "<group>"; };
 		6D693531234A80CC0090D021 /* TripsRepositoryMockup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsRepositoryMockup.swift; sourceTree = "<group>"; };
 		6D693533234A82560090D021 /* GetTripsUseCaseImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTripsUseCaseImp.swift; sourceTree = "<group>"; };
 		6D693535234A83EF0090D021 /* GetTripsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTripsUseCase.swift; sourceTree = "<group>"; };
@@ -182,7 +194,7 @@
 		6DAE5F462347FD9E00C6FFFA /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		6DAE5F4A2347FEC700C6FFFA /* APIMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
 		6DAE5F4C2347FFE700C6FFFA /* URLFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLFactory.swift; sourceTree = "<group>"; };
-		6DAE5F4E234802CB00C6FFFA /* URLComponents+TripManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+TripManager.swift"; sourceTree = "<group>"; };
+		6DAE5F4E234802CB00C6FFFA /* URLComponents+TripManagerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+TripManagerData.swift"; sourceTree = "<group>"; };
 		6DEA8B21234937360041F4C1 /* PointResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointResponse.swift; sourceTree = "<group>"; };
 		6DEA8B23234937450041F4C1 /* LocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResponse.swift; sourceTree = "<group>"; };
 		6DEA8B25234937530041F4C1 /* StopResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopResponse.swift; sourceTree = "<group>"; };
@@ -324,8 +336,34 @@
 			isa = PBXGroup;
 			children = (
 				6DAE5F302347EA1D00C6FFFA /* TripListView.swift */,
+				6D1AFB04234A9E7900EF8131 /* TripListViewModel.swift */,
+				6D1AFB09234AA22800EF8131 /* TripListCoordinator.swift */,
 			);
 			path = TripsList;
+			sourceTree = "<group>";
+		};
+		6D1AFAFE234A9A7A00EF8131 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6D1AFAFF234A9A9600EF8131 /* Container+TripManagerDomain.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6D1AFB01234A9DE800EF8131 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6D1AFB02234A9E0200EF8131 /* Container+TripManager.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6D1AFB06234AA0BB00EF8131 /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				6D1AFB07234AA0D700EF8131 /* DependencyInjection.swift */,
+			);
+			path = DependencyInjection;
 			sourceTree = "<group>";
 		};
 		6D69352D234A7FCB0090D021 /* UseCases */ = {
@@ -396,6 +434,8 @@
 				6DAE5EBA2347E79400C6FFFA /* AppDelegate.swift */,
 				6DAE5EBC2347E79400C6FFFA /* SceneDelegate.swift */,
 				6DAE5F2F2347E9E200C6FFFA /* Views */,
+				6D1AFB01234A9DE800EF8131 /* Extensions */,
+				6D1AFB06234AA0BB00EF8131 /* DependencyInjection */,
 				6DAE5EC02347E79500C6FFFA /* Assets.xcassets */,
 				6DAE5EC52347E79500C6FFFA /* LaunchScreen.storyboard */,
 				6DAE5EC82347E79500C6FFFA /* Info.plist */,
@@ -418,6 +458,7 @@
 				6D69352D234A7FCB0090D021 /* UseCases */,
 				6DAE5F3A2347F12E00C6FFFA /* Models */,
 				6D69352E234A80530090D021 /* Repositories */,
+				6D1AFAFE234A9A7A00EF8131 /* Extensions */,
 				6DAE5EF12347E7DB00C6FFFA /* TripManagerDomain.h */,
 				6DAE5EF22347E7DB00C6FFFA /* Info.plist */,
 			);
@@ -486,7 +527,8 @@
 		6DAE5F422347F58A00C6FFFA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				6DAE5F4E234802CB00C6FFFA /* URLComponents+TripManager.swift */,
+				6DAE5F4E234802CB00C6FFFA /* URLComponents+TripManagerData.swift */,
+				6D1AFAFC234A9A5300EF8131 /* Container+TripManagerData.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1029,8 +1071,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DAE5EBB2347E79400C6FFFA /* AppDelegate.swift in Sources */,
+				6D1AFB05234A9E7900EF8131 /* TripListViewModel.swift in Sources */,
 				6D1AFAF8234A952A00EF8131 /* MapView.swift in Sources */,
+				6D1AFB0A234AA22800EF8131 /* TripListCoordinator.swift in Sources */,
 				6DAE5EBD2347E79400C6FFFA /* SceneDelegate.swift in Sources */,
+				6D1AFB03234A9E0200EF8131 /* Container+TripManager.swift in Sources */,
+				6D1AFB08234AA0D700EF8131 /* DependencyInjection.swift in Sources */,
 				6DAE5F312347EA1D00C6FFFA /* TripListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1043,6 +1089,7 @@
 				6D0C20442348EC4C00D8D20B /* Point.swift in Sources */,
 				6D0C20402348E93A00D8D20B /* Trip.swift in Sources */,
 				6D0C20462348ED1F00D8D20B /* Location.swift in Sources */,
+				6D1AFB00234A9A9600EF8131 /* Container+TripManagerDomain.swift in Sources */,
 				6D0C20422348EB6B00D8D20B /* TripStatus.swift in Sources */,
 				6DAE5F3C2347F15500C6FFFA /* TripManagerError.swift in Sources */,
 				6D693534234A82560090D021 /* GetTripsUseCaseImp.swift in Sources */,
@@ -1064,11 +1111,12 @@
 				6DAE5F412347F42600C6FFFA /* Decoder.swift in Sources */,
 				6DEA8B22234937360041F4C1 /* PointResponse.swift in Sources */,
 				6DAE5F4D2347FFE700C6FFFA /* URLFactory.swift in Sources */,
+				6D1AFAFD234A9A5300EF8131 /* Container+TripManagerData.swift in Sources */,
 				6DAE5F392347F11D00C6FFFA /* APIClient.swift in Sources */,
 				6DEA8B29234939E80041F4C1 /* TripsRemoteDataSource.swift in Sources */,
 				6DEA8B3223493CCB0041F4C1 /* TripsAPIClientMockup.swift in Sources */,
 				6DAE5F472347FD9E00C6FFFA /* APIEndpoint.swift in Sources */,
-				6DAE5F4F234802CB00C6FFFA /* URLComponents+TripManager.swift in Sources */,
+				6DAE5F4F234802CB00C6FFFA /* URLComponents+TripManagerData.swift in Sources */,
 				6DAE5F4B2347FEC700C6FFFA /* APIMethod.swift in Sources */,
 				6D0C20352348E44B00D8D20B /* BaseRemoteDataSource.swift in Sources */,
 				6D0C203C2348E8C000D8D20B /* TripResponse.swift in Sources */,

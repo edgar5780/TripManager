@@ -10,15 +10,15 @@ import SwiftUI
 import MapKit
 
 struct TripListView: View {
+    private let viewModel: TripListViewModel
+
+    init(_ viewModel: TripListViewModel) {
+        self.viewModel = viewModel
+    }
+
     var body: some View {
         VStack {
             MapView()
         }.edgesIgnoringSafeArea(.vertical)
-    }
-}
-
-struct TripListView_Previews: PreviewProvider {
-    static var previews: some View {
-        TripListView()
     }
 }

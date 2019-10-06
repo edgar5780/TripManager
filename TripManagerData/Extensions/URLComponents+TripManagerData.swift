@@ -1,5 +1,5 @@
 //
-//  URLComponents+TripManager.swift
+//  URLComponents+TripManagerData.swift
 //  TripManagerData
 //
 //  Created by Edgar Luis Diaz on 05/10/2019.
