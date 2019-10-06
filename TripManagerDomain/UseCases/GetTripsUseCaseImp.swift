@@ -9,7 +9,7 @@
 import Foundation
 import Combine
 
-final class GetTripsUseCaseImp {
+final class GetTripsUseCaseImp: GetTripsUseCase {
     private let repository: TripsRepository
 
     init(_ repository: TripsRepository) {

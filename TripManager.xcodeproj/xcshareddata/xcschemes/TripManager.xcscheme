@@ -39,6 +39,16 @@
                ReferencedContainer = "container:TripManager.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6D69353A234A85550090D021"
+               BuildableName = "TripManagerDomainTests.xctest"
+               BlueprintName = "TripManagerDomainTests"
+               ReferencedContainer = "container:TripManager.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

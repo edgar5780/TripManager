@@ -21,4 +21,7 @@ end
 target 'TripManagerDomain' do
   use_frameworks!
   globalPods
+  target 'TripManagerDomainTests' do
+    inherit! :search_paths
+  end
 end

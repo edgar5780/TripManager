@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		595EE2534CF75C5CFC306F6B /* Pods_TripManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9A28A1DE3098C8FD43DE30 /* Pods_TripManager.framework */; };
+		66B5E9E3158E2E180CF444EF /* Pods_TripManagerDomainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADE918A831B1009675D7E5A /* Pods_TripManagerDomainTests.framework */; };
 		6D0101722348C3F300A50B06 /* TripManagerData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAE5F122347E7E700C6FFFA /* TripManagerData.framework */; };
 		6D08C5D12348C63900736E19 /* URLFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D08C5D02348C63900736E19 /* URLFactoryTest.swift */; };
 		6D0C20352348E44B00D8D20B /* BaseRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C20342348E44B00D8D20B /* BaseRemoteDataSource.swift */; };
@@ -19,10 +20,13 @@
 		6D0C20442348EC4C00D8D20B /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C20432348EC4C00D8D20B /* Point.swift */; };
 		6D0C20462348ED1F00D8D20B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C20452348ED1F00D8D20B /* Location.swift */; };
 		6D0C20482348ED6D00D8D20B /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C20472348ED6D00D8D20B /* Stop.swift */; };
+		6D1AFAF5234A86E600EF8131 /* GetTripsUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AFAF4234A86E600EF8131 /* GetTripsUseCaseTest.swift */; };
 		6D69352F234A807E0090D021 /* TripsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA8B2C23493AF20041F4C1 /* TripsRepository.swift */; };
 		6D693532234A80CC0090D021 /* TripsRepositoryMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D693531234A80CC0090D021 /* TripsRepositoryMockup.swift */; };
 		6D693534234A82560090D021 /* GetTripsUseCaseImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D693533234A82560090D021 /* GetTripsUseCaseImp.swift */; };
 		6D693536234A83EF0090D021 /* GetTripsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D693535234A83EF0090D021 /* GetTripsUseCase.swift */; };
+		6D69353E234A85550090D021 /* TripManagerDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D69353D234A85550090D021 /* TripManagerDomainTests.swift */; };
+		6D693540234A85550090D021 /* TripManagerDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAE5EEF2347E7DB00C6FFFA /* TripManagerDomain.framework */; };
 		6DAE5EBB2347E79400C6FFFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5EBA2347E79400C6FFFA /* AppDelegate.swift */; };
 		6DAE5EBD2347E79400C6FFFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5EBC2347E79400C6FFFA /* SceneDelegate.swift */; };
 		6DAE5EC12347E79500C6FFFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DAE5EC02347E79500C6FFFA /* Assets.xcassets */; };
@@ -68,6 +72,20 @@
 			remoteInfo = TripManagerData;
 		};
 		6D08C5AA2348C45E00736E19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DAE5EAF2347E79400C6FFFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DAE5EB62347E79400C6FFFA;
+			remoteInfo = TripManager;
+		};
+		6D693541234A85550090D021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DAE5EAF2347E79400C6FFFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DAE5EEE2347E7DB00C6FFFA;
+			remoteInfo = TripManagerDomain;
+		};
+		6D693546234A855A0090D021 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6DAE5EAF2347E79400C6FFFA /* Project object */;
 			proxyType = 1;
@@ -134,9 +152,13 @@
 		6D0C20432348EC4C00D8D20B /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		6D0C20452348ED1F00D8D20B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		6D0C20472348ED6D00D8D20B /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
+		6D1AFAF4234A86E600EF8131 /* GetTripsUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTripsUseCaseTest.swift; sourceTree = "<group>"; };
 		6D693531234A80CC0090D021 /* TripsRepositoryMockup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsRepositoryMockup.swift; sourceTree = "<group>"; };
 		6D693533234A82560090D021 /* GetTripsUseCaseImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTripsUseCaseImp.swift; sourceTree = "<group>"; };
 		6D693535234A83EF0090D021 /* GetTripsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTripsUseCase.swift; sourceTree = "<group>"; };
+		6D69353B234A85550090D021 /* TripManagerDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripManagerDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D69353D234A85550090D021 /* TripManagerDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripManagerDomainTests.swift; sourceTree = "<group>"; };
+		6D69353F234A85550090D021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DAE5EB72347E79400C6FFFA /* TripManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DAE5EBA2347E79400C6FFFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DAE5EBC2347E79400C6FFFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +214,15 @@
 			files = (
 				6D0101722348C3F300A50B06 /* TripManagerData.framework in Frameworks */,
 				7949DE091848D8CB6D39E363 /* Pods_TripManagerDataTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D693538234A85550090D021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D693540234A85550090D021 /* TripManagerDomain.framework in Frameworks */,
+				66B5E9E3158E2E180CF444EF /* Pods_TripManagerDomainTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +302,14 @@
 			path = Responses;
 			sourceTree = "<group>";
 		};
+		6D1AFAF3234A86CB00EF8131 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				6D1AFAF4234A86E600EF8131 /* GetTripsUseCaseTest.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 		6D69352D234A7FCB0090D021 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +336,16 @@
 			path = Trip;
 			sourceTree = "<group>";
 		};
+		6D69353C234A85550090D021 /* TripManagerDomainTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D1AFAF3234A86CB00EF8131 /* UseCases */,
+				6D69353D234A85550090D021 /* TripManagerDomainTests.swift */,
+				6D69353F234A85550090D021 /* Info.plist */,
+			);
+			path = TripManagerDomainTests;
+			sourceTree = "<group>";
+		};
 		6DAE5EAE2347E79400C6FFFA = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +353,7 @@
 				6DAE5EF02347E7DB00C6FFFA /* TripManagerDomain */,
 				6DAE5F132347E7E700C6FFFA /* TripManagerData */,
 				6D01016E2348C3F300A50B06 /* TripManagerDataTests */,
+				6D69353C234A85550090D021 /* TripManagerDomainTests */,
 				6DAE5EB82347E79400C6FFFA /* Products */,
 				B3411E7E482D1C5A43B2818D /* Pods */,
 				F3286AA2E4931196C6C2A5D1 /* Frameworks */,
@@ -317,6 +367,7 @@
 				6DAE5EEF2347E7DB00C6FFFA /* TripManagerDomain.framework */,
 				6DAE5F122347E7E700C6FFFA /* TripManagerData.framework */,
 				6D01016D2348C3F300A50B06 /* TripManagerDataTests.xctest */,
+				6D69353B234A85550090D021 /* TripManagerDomainTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -574,6 +625,26 @@
 			productReference = 6D01016D2348C3F300A50B06 /* TripManagerDataTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		6D69353A234A85550090D021 /* TripManagerDomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D693543234A85550090D021 /* Build configuration list for PBXNativeTarget "TripManagerDomainTests" */;
+			buildPhases = (
+				3FB820A47A7525FEB18570A1 /* [CP] Check Pods Manifest.lock */,
+				6D693537234A85550090D021 /* Sources */,
+				6D693538234A85550090D021 /* Frameworks */,
+				6D693539234A85550090D021 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D693542234A85550090D021 /* PBXTargetDependency */,
+				6D693547234A855A0090D021 /* PBXTargetDependency */,
+			);
+			name = TripManagerDomainTests;
+			productName = TripManagerDomainTests;
+			productReference = 6D69353B234A85550090D021 /* TripManagerDomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		6DAE5EB62347E79400C6FFFA /* TripManager */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DAE5EE12347E79500C6FFFA /* Build configuration list for PBXNativeTarget "TripManager" */;
@@ -652,6 +723,10 @@
 						CreatedOnToolsVersion = 11.0;
 						TestTargetID = 6DAE5EB62347E79400C6FFFA;
 					};
+					6D69353A234A85550090D021 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 6DAE5EB62347E79400C6FFFA;
+					};
 					6DAE5EB62347E79400C6FFFA = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -682,12 +757,20 @@
 				6DAE5EEE2347E7DB00C6FFFA /* TripManagerDomain */,
 				6DAE5F112347E7E700C6FFFA /* TripManagerData */,
 				6D01016C2348C3F300A50B06 /* TripManagerDataTests */,
+				6D69353A234A85550090D021 /* TripManagerDomainTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6D01016B2348C3F300A50B06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D693539234A85550090D021 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -781,6 +864,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TripManager/Pods-TripManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FB820A47A7525FEB18570A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TripManagerDomainTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6DAE5F342347ED9600C6FFFA /* ShellScript */ = {
@@ -891,6 +996,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6D693537234A85550090D021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D69353E234A85550090D021 /* TripManagerDomainTests.swift in Sources */,
+				6D1AFAF5234A86E600EF8131 /* GetTripsUseCaseTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6DAE5EB32347E79400C6FFFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -957,6 +1071,16 @@
 			target = 6DAE5EB62347E79400C6FFFA /* TripManager */;
 			targetProxy = 6D08C5AA2348C45E00736E19 /* PBXContainerItemProxy */;
 		};
+		6D693542234A85550090D021 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DAE5EEE2347E7DB00C6FFFA /* TripManagerDomain */;
+			targetProxy = 6D693541234A85550090D021 /* PBXContainerItemProxy */;
+		};
+		6D693547234A855A0090D021 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DAE5EB62347E79400C6FFFA /* TripManager */;
+			targetProxy = 6D693546234A855A0090D021 /* PBXContainerItemProxy */;
+		};
 		6DAE5F032347E7DB00C6FFFA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6DAE5EEE2347E7DB00C6FFFA /* TripManagerDomain */;
@@ -1019,6 +1143,46 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.diazwho.TripManagerDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TripManager.app/TripManager";
+			};
+			name = Release;
+		};
+		6D693544234A85550090D021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ED05915811E01B6AB74B253 /* Pods-TripManagerDomainTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9H4H2J4YMN;
+				INFOPLIST_FILE = TripManagerDomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diazwho.TripManagerDomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TripManager.app/TripManager";
+			};
+			name = Debug;
+		};
+		6D693545234A85550090D021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C10417C058929D08CAD11516 /* Pods-TripManagerDomainTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9H4H2J4YMN;
+				INFOPLIST_FILE = TripManagerDomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diazwho.TripManagerDomainTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1308,6 +1472,15 @@
 			buildConfigurations = (
 				6D0101752348C3F300A50B06 /* Debug */,
 				6D0101762348C3F300A50B06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D693543234A85550090D021 /* Build configuration list for PBXNativeTarget "TripManagerDomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D693544234A85550090D021 /* Debug */,
+				6D693545234A85550090D021 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

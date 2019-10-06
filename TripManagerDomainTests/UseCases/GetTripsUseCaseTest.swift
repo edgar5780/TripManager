@@ -1,6 +1,6 @@
 //
-//  TripsRepositoryTest.swift
-//  TripManagerDataTests
+//  GetTripsUseCaseTest.swift
+//  TripManagerDomainTests
 //
 //  Created by Edgar Luis Diaz on 06/10/2019.
 //  Copyright © 2019 Edgar. All rights reserved.
@@ -8,11 +8,10 @@
 
 import XCTest
 import Combine
-import TripManagerDomain
-@testable import TripManagerData
+@testable import TripManagerDomain
 
-class TripsRepositoryTest: XCTestCase {
-    var repository: TripsRepository?
+class GetTripsUseCaseTest: XCTestCase {
+    var useCase: GetTripsUseCase?
     var disposables: Set<AnyCancellable>?
 
     override func setUp() {
@@ -20,20 +19,20 @@ class TripsRepositoryTest: XCTestCase {
     }
 
     override func tearDown() {
-        repository = nil
+        useCase = nil
         disposables = nil
     }
 
     func testRepositoryGetTripsSuccess() {
-        let remoteDataSource = TripsRemoteDataSourceSuccessMockup()
-        repository = TripsRepositoryImp(remoteDataSource)
-        let expectation = XCTestExpectation(description: "getTrips() finished")
-        repository?.getTrips().sink(receiveCompletion: { completion in
+        let repository = TripsRepositorySuccessMockup()
+        useCase = GetTripsUseCaseImp(repository)
+        let expectation = XCTestExpectation(description: "invoke() finished")
+        useCase?.invoke().sink(receiveCompletion: { completion in
             switch completion {
             case .finished:
                 expectation.fulfill()
             case .failure(let error):
-                XCTFail("getTrips() shouldn't fail. Error: \(error)")
+                XCTFail("invoke() shouldn't fail. Error: \(error)")
                 expectation.fulfill()
             }
         }, receiveValue: { trips in
@@ -42,13 +41,13 @@ class TripsRepositoryTest: XCTestCase {
     }
 
     func testRepositoryGetTripsFails() {
-        let remoteDataSource = TripsRemoteDataSourceFailureMockup()
-        repository = TripsRepositoryImp(remoteDataSource)
-        let expectation = XCTestExpectation(description: "getTrips() fails")
-        repository?.getTrips().sink(receiveCompletion: { completion in
+        let repository = TripsRepositoryFailureMockup()
+        useCase = GetTripsUseCaseImp(repository)
+        let expectation = XCTestExpectation(description: "invoke() fails")
+        useCase?.invoke().sink(receiveCompletion: { completion in
             switch completion {
             case .finished:
-                XCTFail("getTrips() should fail.")
+                XCTFail("invoke() should fail.")
                 expectation.fulfill()
             case .failure(let error):
                 switch error {
@@ -60,7 +59,7 @@ class TripsRepositoryTest: XCTestCase {
                 expectation.fulfill()
             }
         }, receiveValue: { _ in
-            XCTFail("getTrips() should fail.")
+            XCTFail("invoke() should fail.")
         }).store(in: &disposables!)
     }
 }
