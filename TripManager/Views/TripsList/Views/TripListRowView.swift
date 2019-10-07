@@ -17,24 +17,33 @@ struct TripListRowView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text(uiModel.description)
+                .foregroundColor(.red)
+                .bold()
             HStack {
                 Image("origin")
                 Text(uiModel.origin)
                     .font(.caption)
+                    .foregroundColor(.gray)
+                    .bold()
                 Spacer()
                 Text(uiModel.startDate)
                     .font(.caption)
+                    .foregroundColor(.gray)
             }
             HStack {
                 Image("destination")
                 Text(uiModel.destination)
                     .font(.caption)
+                    .foregroundColor(.gray)
+                    .bold()
                 Spacer()
                 Text(uiModel.endDate)
                     .font(.caption)
+                    .foregroundColor(.gray)
             }
             Text("\(Strings.driverName.localize(uiModel.driverName))")
                 .font(.caption)
+                .foregroundColor(.gray)
         }
     }
 }
