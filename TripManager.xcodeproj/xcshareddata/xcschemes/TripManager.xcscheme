@@ -27,7 +27,31 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6DAE5EB62347E79400C6FFFA"
+            BuildableName = "TripManager.app"
+            BlueprintName = "TripManager"
+            ReferencedContainer = "container:TripManager.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6DAE5F112347E7E700C6FFFA"
+            BuildableName = "TripManagerData.framework"
+            BlueprintName = "TripManagerData"
+            ReferencedContainer = "container:TripManager.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6DAE5EEE2347E7DB00C6FFFA"
+            BuildableName = "TripManagerDomain.framework"
+            BlueprintName = "TripManagerDomain"
+            ReferencedContainer = "container:TripManager.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO">
