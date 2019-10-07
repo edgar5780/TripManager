@@ -19,6 +19,7 @@ struct TripListRowView: View {
             Text(uiModel.description)
                 .foregroundColor(.red)
                 .bold()
+                .lineLimit(2)
             HStack {
                 Image("origin")
                 Text(uiModel.origin)
