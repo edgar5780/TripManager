@@ -37,7 +37,6 @@ final class TripListViewModel: ObservableObject {
             guard let self = self else { return }
             switch completion {
             case .failure(let error):
-                print(error)
                 self.dataSource = []
             case .finished:
                 break

@@ -39,7 +39,6 @@ struct TripListView: View {
     var tripsSection: some View {
         ForEach(viewModel.dataSource) { item in
             Button(action: {
-                print(item.description)
             }, label: {
                 TripListRowView(item)
             })
