@@ -1,20 +1,24 @@
 PODS:
+  - Polyline (4.2.1)
   - SwiftLint (0.35.0)
   - Swinject (2.7.1)
 
 DEPENDENCIES:
+  - Polyline (~> 4.0)
   - SwiftLint
   - Swinject
 
 SPEC REPOS:
   trunk:
+    - Polyline
     - SwiftLint
     - Swinject
 
 SPEC CHECKSUMS:
+  Polyline: 0e9890790292741c8186201a536b6bb6a78d02dd
   SwiftLint: 5553187048b900c91aa03552807681bb6b027846
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: 71ede8b66c6db390555b64b9c446883d80db318d
+PODFILE CHECKSUM: 4c79efbf40df7c4923bd30a188b8ab65ea322a78
 
 COCOAPODS: 1.8.3

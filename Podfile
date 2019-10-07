@@ -8,6 +8,7 @@ end
 target 'TripManager' do
   use_frameworks!
   globalPods
+  pod 'Polyline', '~> 4.0'
 end
 
 target 'TripManagerData' do
