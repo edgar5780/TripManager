@@ -19,7 +19,7 @@ struct TripListView: View {
 
     var body: some View {
         VStack {
-            MapView()
+            MapView(annotations: $viewModel.annotations)
             List {
                 if viewModel.dataSource.isEmpty {
                     emptySection
@@ -39,6 +39,7 @@ struct TripListView: View {
     var tripsSection: some View {
         ForEach(viewModel.dataSource) { item in
             Button(action: {
+                self.viewModel.itemSelected(item.id)
             }, label: {
                 TripListRowView(item)
             })
