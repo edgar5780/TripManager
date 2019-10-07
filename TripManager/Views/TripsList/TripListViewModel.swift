@@ -36,7 +36,7 @@ final class TripListViewModel: ObservableObject {
         .sink(receiveCompletion: { [weak self] completion in
             guard let self = self else { return }
             switch completion {
-            case .failure(let error):
+            case .failure:
                 self.dataSource = []
             case .finished:
                 break
