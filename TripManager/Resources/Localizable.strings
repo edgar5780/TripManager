@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  TripManager
+
+  Created by Edgar Luis Diaz on 07/10/2019.
+  Copyright © 2019 Edgar. All rights reserved.
+*/
+
+"DriverName" = "Driver name: %@";

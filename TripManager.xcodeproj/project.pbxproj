@@ -21,6 +21,8 @@
 		6D0C20462348ED1F00D8D20B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C20452348ED1F00D8D20B /* Location.swift */; };
 		6D0C20482348ED6D00D8D20B /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C20472348ED6D00D8D20B /* Stop.swift */; };
 		6D11540A234BAF0F00DF4228 /* Date+TripManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D115409234BAF0F00DF4228 /* Date+TripManager.swift */; };
+		6D115413234BB21500DF4228 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D115412234BB21500DF4228 /* Strings.swift */; };
+		6D115418234BB44700DF4228 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D115417234BB44700DF4228 /* Localizable.strings */; };
 		6D1AFAF5234A86E600EF8131 /* GetTripsAvailableUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AFAF4234A86E600EF8131 /* GetTripsAvailableUseCaseTest.swift */; };
 		6D1AFAF8234A952A00EF8131 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AFAF7234A952A00EF8131 /* MapView.swift */; };
 		6D1AFAFD234A9A5300EF8131 /* Container+TripManagerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AFAFC234A9A5300EF8131 /* Container+TripManagerData.swift */; };
@@ -162,6 +164,8 @@
 		6D0C20452348ED1F00D8D20B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		6D0C20472348ED6D00D8D20B /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
 		6D115409234BAF0F00DF4228 /* Date+TripManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+TripManager.swift"; sourceTree = "<group>"; };
+		6D115412234BB21500DF4228 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		6D115417234BB44700DF4228 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		6D1AFAF4234A86E600EF8131 /* GetTripsAvailableUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTripsAvailableUseCaseTest.swift; sourceTree = "<group>"; };
 		6D1AFAF7234A952A00EF8131 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		6D1AFAFC234A9A5300EF8131 /* Container+TripManagerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+TripManagerData.swift"; sourceTree = "<group>"; };
@@ -320,6 +324,16 @@
 			path = Responses;
 			sourceTree = "<group>";
 		};
+		6D11540B234BB17A00DF4228 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6DAE5EC02347E79500C6FFFA /* Assets.xcassets */,
+				6D115412234BB21500DF4228 /* Strings.swift */,
+				6D115417234BB44700DF4228 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		6D1AFAF3234A86CB00EF8131 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,7 +464,7 @@
 				6DAE5F2F2347E9E200C6FFFA /* Views */,
 				6D1AFB01234A9DE800EF8131 /* Extensions */,
 				6D1AFB06234AA0BB00EF8131 /* DependencyInjection */,
-				6DAE5EC02347E79500C6FFFA /* Assets.xcassets */,
+				6D11540B234BB17A00DF4228 /* Resources */,
 				6DAE5EC52347E79500C6FFFA /* LaunchScreen.storyboard */,
 				6DAE5EC82347E79500C6FFFA /* Info.plist */,
 				6DAE5EC22347E79500C6FFFA /* Preview Content */,
@@ -857,6 +871,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DAE5EC72347E79500C6FFFA /* LaunchScreen.storyboard in Resources */,
+				6D115418234BB44700DF4228 /* Localizable.strings in Resources */,
 				6DAE5EC42347E79500C6FFFA /* Preview Assets.xcassets in Resources */,
 				6DAE5EC12347E79500C6FFFA /* Assets.xcassets in Resources */,
 			);
@@ -1085,6 +1100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DAE5EBB2347E79400C6FFFA /* AppDelegate.swift in Sources */,
+				6D115413234BB21500DF4228 /* Strings.swift in Sources */,
 				6D1AFB05234A9E7900EF8131 /* TripListViewModel.swift in Sources */,
 				6D11540A234BAF0F00DF4228 /* Date+TripManager.swift in Sources */,
 				6D1AFAF8234A952A00EF8131 /* MapView.swift in Sources */,

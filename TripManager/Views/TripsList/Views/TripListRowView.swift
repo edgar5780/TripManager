@@ -33,7 +33,7 @@ struct TripListRowView: View {
                 Text(uiModel.endDate)
                     .font(.caption)
             }
-            Text(uiModel.driverName)
+            Text("\(Strings.driverName.localize(uiModel.driverName))")
                 .font(.caption)
         }
     }
