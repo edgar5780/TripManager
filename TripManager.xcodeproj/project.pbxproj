@@ -40,7 +40,6 @@
 		6D693532234A80CC0090D021 /* TripsRepositoryMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D693531234A80CC0090D021 /* TripsRepositoryMockup.swift */; };
 		6D693534234A82560090D021 /* GetTripsAvailableUseCaseImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D693533234A82560090D021 /* GetTripsAvailableUseCaseImp.swift */; };
 		6D693536234A83EF0090D021 /* GetTripsAvailableUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D693535234A83EF0090D021 /* GetTripsAvailableUseCase.swift */; };
-		6D69353E234A85550090D021 /* TripManagerDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D69353D234A85550090D021 /* TripManagerDomainTests.swift */; };
 		6D693540234A85550090D021 /* TripManagerDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAE5EEF2347E7DB00C6FFFA /* TripManagerDomain.framework */; };
 		6DAE5EBB2347E79400C6FFFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5EBA2347E79400C6FFFA /* AppDelegate.swift */; };
 		6DAE5EBD2347E79400C6FFFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5EBC2347E79400C6FFFA /* SceneDelegate.swift */; };
@@ -187,7 +186,6 @@
 		6D693533234A82560090D021 /* GetTripsAvailableUseCaseImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTripsAvailableUseCaseImp.swift; sourceTree = "<group>"; };
 		6D693535234A83EF0090D021 /* GetTripsAvailableUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTripsAvailableUseCase.swift; sourceTree = "<group>"; };
 		6D69353B234A85550090D021 /* TripManagerDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripManagerDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D69353D234A85550090D021 /* TripManagerDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripManagerDomainTests.swift; sourceTree = "<group>"; };
 		6D69353F234A85550090D021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DAE5EB72347E79400C6FFFA /* TripManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DAE5EBA2347E79400C6FFFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -443,7 +441,6 @@
 			isa = PBXGroup;
 			children = (
 				6D1AFAF3234A86CB00EF8131 /* UseCases */,
-				6D69353D234A85550090D021 /* TripManagerDomainTests.swift */,
 				6D69353F234A85550090D021 /* Info.plist */,
 			);
 			path = TripManagerDomainTests;
@@ -1110,7 +1107,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D69353E234A85550090D021 /* TripManagerDomainTests.swift in Sources */,
 				6D1AFAF5234A86E600EF8131 /* GetTripsAvailableUseCaseTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
