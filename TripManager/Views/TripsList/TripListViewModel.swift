@@ -54,11 +54,20 @@ final class TripListViewModel: ObservableObject {
         let indexUnwrapped = dataSource.firstIndex(where: { $0.id == id })
         guard let index = indexUnwrapped, index < trips.count else { return }
         let trip = trips[index]
+        getAnnotations(trip)
+    }
+
+    private func getAnnotations(_ trip: Trip) {
         annotations = [MapView.Annotation(address: trip.origin.address,
                                           coordinates: (trip.origin.point.latitude,
                                                         trip.origin.point.longitude)),
                        MapView.Annotation(address: trip.destination.address,
                                           coordinates: (trip.destination.point.latitude,
                                                         trip.destination.point.longitude))]
+        let stopAnnotations = trip.stops.map { stop in
+            MapView.Annotation(address: "",
+                               coordinates: (stop.point.latitude, stop.point.longitude))
+        }
+        annotations.append(contentsOf: stopAnnotations)
     }
 }
