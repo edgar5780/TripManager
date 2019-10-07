@@ -17,7 +17,7 @@ struct TripListRowView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text(uiModel.description)
-                .foregroundColor(.red)
+                .foregroundColor(.customOrange)
                 .bold()
                 .lineLimit(2)
             HStack {
