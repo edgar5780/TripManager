@@ -1,5 +1,5 @@
 //
-//  GetTripsUseCaseTest.swift
+//  GetTripsAvailableUseCaseTest.swift
 //  TripManagerDomainTests
 //
 //  Created by Edgar Luis Diaz on 06/10/2019.
@@ -10,8 +10,8 @@ import XCTest
 import Combine
 @testable import TripManagerDomain
 
-class GetTripsUseCaseTest: XCTestCase {
-    var useCase: GetTripsUseCase?
+class GetTripsAvailableUseCaseTest: XCTestCase {
+    var useCase: GetTripsAvailableUseCase?
     var disposables: Set<AnyCancellable>?
 
     override func setUp() {
@@ -25,7 +25,7 @@ class GetTripsUseCaseTest: XCTestCase {
 
     func testRepositoryGetTripsSuccess() {
         let repository = TripsRepositorySuccessMockup()
-        useCase = GetTripsUseCaseImp(repository)
+        useCase = GetTripsAvailableUseCaseImp(repository)
         let expectation = XCTestExpectation(description: "invoke() finished")
         useCase?.invoke().sink(receiveCompletion: { completion in
             switch completion {
@@ -42,7 +42,7 @@ class GetTripsUseCaseTest: XCTestCase {
 
     func testRepositoryGetTripsFails() {
         let repository = TripsRepositoryFailureMockup()
-        useCase = GetTripsUseCaseImp(repository)
+        useCase = GetTripsAvailableUseCaseImp(repository)
         let expectation = XCTestExpectation(description: "invoke() fails")
         useCase?.invoke().sink(receiveCompletion: { completion in
             switch completion {

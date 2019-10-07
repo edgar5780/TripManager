@@ -1,5 +1,5 @@
 //
-//  GetTripsUseCaseImp.swift
+//  GetTripsAvailableUseCaseImp.swift
 //  TripManagerDomain
 //
 //  Created by Edgar Luis Diaz on 06/10/2019.
@@ -9,7 +9,7 @@
 import Foundation
 import Combine
 
-final class GetTripsUseCaseImp: GetTripsUseCase {
+final class GetTripsAvailableUseCaseImp: GetTripsAvailableUseCase {
     private let repository: TripsRepository
 
     init(_ repository: TripsRepository) {
@@ -17,6 +17,8 @@ final class GetTripsUseCaseImp: GetTripsUseCase {
     }
 
     func invoke() -> AnyPublisher<[Trip], TripManagerError> {
-        repository.getTrips()
+        repository.getTrips().map { trips in
+            trips.filter { $0.status == .scheduled || $0.status == .ongoing }
+        }.eraseToAnyPublisher()
     }
 }

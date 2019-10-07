@@ -1,5 +1,5 @@
 //
-//  GetTripsUseCase.swift
+//  GetTripsAvailableUseCase.swift
 //  TripManagerDomain
 //
 //  Created by Edgar Luis Diaz on 06/10/2019.
@@ -9,6 +9,6 @@
 import Foundation
 import Combine
 
-public protocol GetTripsUseCase {
+public protocol GetTripsAvailableUseCase {
     func invoke() -> AnyPublisher<[Trip], TripManagerError>
 }

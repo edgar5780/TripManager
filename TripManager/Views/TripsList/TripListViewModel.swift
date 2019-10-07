@@ -12,16 +12,16 @@ import TripManagerDomain
 
 final class TripListViewModel: ObservableObject {
     @Published var dataSource: [TripListRowView.UIModel]
-    private let getTripsUseCase: GetTripsUseCase
+    private let getTripsAvailableUseCase: GetTripsAvailableUseCase
     private var disposables = Set<AnyCancellable>()
 
-    init(_ getTripsUseCase: GetTripsUseCase) {
-        self.getTripsUseCase = getTripsUseCase
+    init(_ getTripsAvailableUseCase: GetTripsAvailableUseCase) {
+        self.getTripsAvailableUseCase = getTripsAvailableUseCase
         dataSource = []
     }
 
     func fetch() {
-        getTripsUseCase.invoke()
+        getTripsAvailableUseCase.invoke()
             .map { trips in
                 trips.map { trip in
                     TripListRowView.UIModel(driverName: trip.driverName,

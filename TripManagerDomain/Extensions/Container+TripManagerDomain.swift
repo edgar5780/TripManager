@@ -11,9 +11,9 @@ import Swinject
 
 public extension Container {
     func registerDomain() {
-        register(GetTripsUseCase.self) { resolver in
+        register(GetTripsAvailableUseCase.self) { resolver in
             let repository = resolver.resolve(TripsRepository.self)!
-            return GetTripsUseCaseImp(repository)
+            return GetTripsAvailableUseCaseImp(repository)
         }
     }
 }

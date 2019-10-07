@@ -26,8 +26,8 @@ extension Container {
 
     private func registerViewModels() {
        register(TripListViewModel.self) { resolver in
-           let getTripsUseCase = resolver.resolve(GetTripsUseCase.self)!
-           return TripListViewModel(getTripsUseCase)
+           let getTripsAvailableUseCase = resolver.resolve(GetTripsAvailableUseCase.self)!
+           return TripListViewModel(getTripsAvailableUseCase)
        }
     }
 }
