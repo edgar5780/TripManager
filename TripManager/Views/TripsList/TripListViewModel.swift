@@ -28,8 +28,8 @@ final class TripListViewModel: ObservableObject {
                                             description: trip.description,
                                             origin: trip.origin.address,
                                             destination: trip.destination.address,
-                                            startDate: "",
-                                            endDate: "")
+                                            startDate: trip.startTime.getFormattedDate(),
+                                            endDate: trip.endTime.getFormattedDate())
                 }
         }
         .receive(on: DispatchQueue.main)

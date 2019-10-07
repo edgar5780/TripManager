@@ -15,19 +15,26 @@ struct TripListRowView: View {
         self.uiModel = uiModel
     }
     var body: some View {
-        VStack(alignment: .leading, spacing: 5) {
-            Text(uiModel.driverName)
+        VStack(alignment: .leading, spacing: 12) {
             Text(uiModel.description)
             HStack {
+                Image("origin")
                 Text(uiModel.origin)
+                    .font(.caption)
                 Spacer()
                 Text(uiModel.startDate)
+                    .font(.caption)
             }
             HStack {
+                Image("destination")
                 Text(uiModel.destination)
+                    .font(.caption)
                 Spacer()
                 Text(uiModel.endDate)
+                    .font(.caption)
             }
+            Text(uiModel.driverName)
+                .font(.caption)
         }
     }
 }
