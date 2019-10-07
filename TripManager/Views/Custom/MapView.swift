@@ -11,30 +11,71 @@ import MapKit
 
 struct MapView: UIViewRepresentable {
     @Binding var annotations: [Annotation]
+    @Binding var polylineCoordinates: [Coordinates]
 
     func makeUIView(context: Context) -> MKMapView {
-        MKMapView()
+        let mapView = MKMapView()
+        mapView.delegate = context.coordinator
+        return mapView
+    }
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
     }
 
     func updateUIView(_ view: MKMapView, context: Context) {
-        updateAnnotations(from: view)
+        updateAnnotations(view)
+        updatePolyline(view)
     }
 
-    private func updateAnnotations(from mapView: MKMapView) {
+    private func updateAnnotations(_ mapView: MKMapView) {
         mapView.removeAnnotations(mapView.annotations)
+        guard !annotations.isEmpty else { return }
         let newAnnotations = annotations.map { annotation in
             TripAnnotation(annotation.address,
-                           CLLocationCoordinate2D(latitude: annotation.coordinates.latidude,
+                           CLLocationCoordinate2D(latitude: annotation.coordinates.latitude,
                                                   longitude: annotation.coordinates.longitude))
         }
         mapView.addAnnotations(newAnnotations)
         mapView.fitAll()
+    }
+
+    private func updatePolyline(_ mapView: MKMapView) {
+        mapView.removeOverlays(mapView.overlays)
+        guard !polylineCoordinates.isEmpty else { return }
+        let polylineCoordinates = self.polylineCoordinates.map { coordinates in
+            CLLocationCoordinate2D(latitude: coordinates.latitude,
+                                   longitude: coordinates.longitude)
+        }
+        let geodesic = MKGeodesicPolyline(coordinates: polylineCoordinates, count: polylineCoordinates.count)
+        mapView.addOverlay(geodesic)
     }
 }
 
 extension MapView {
     struct Annotation {
         var address: String
-        var coordinates: (latidude: Double, longitude: Double)
+        var coordinates: Coordinates
     }
+
+    struct Coordinates {
+        var latitude: Double
+        var longitude: Double
+    }
+
+    final class Coordinator: NSObject, MKMapViewDelegate {
+        var control: MapView
+
+        init(_ control: MapView) {
+            self.control = control
+        }
+
+        func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+            let polylineRenderer = MKPolylineRenderer(overlay: overlay)
+            polylineRenderer.strokeColor = .red
+            polylineRenderer.lineWidth = 5
+            return polylineRenderer
+        }
+    }
+
 }

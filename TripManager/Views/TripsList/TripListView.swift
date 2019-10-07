@@ -19,7 +19,8 @@ struct TripListView: View {
 
     var body: some View {
         VStack {
-            MapView(annotations: $viewModel.annotations)
+            MapView(annotations: $viewModel.annotations,
+                    polylineCoordinates: $viewModel.polylineCoordinates)
             List {
                 if viewModel.dataSource.isEmpty {
                     emptySection
