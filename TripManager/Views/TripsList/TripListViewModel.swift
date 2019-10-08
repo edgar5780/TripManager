@@ -63,6 +63,10 @@ final class TripListViewModel: ObservableObject {
         getPolyline(trip.route)
     }
 
+    func annotationSelected(_ id: Int?) {
+        print(id)
+    }
+
     private func getAnnotations(_ trip: Trip) {
         annotations = [.init(address: trip.origin.address,
                              coordinates: .init(latitude: trip.origin.point.latitude,
@@ -73,7 +77,8 @@ final class TripListViewModel: ObservableObject {
         let stopAnnotations = trip.stops.map { stop in
             MapView.Annotation(address: "",
                                coordinates: .init(latitude: stop.point.latitude,
-                                                  longitude: stop.point.longitude))
+                                                  longitude: stop.point.longitude),
+                               id: stop.id)
         }
         annotations.append(contentsOf: stopAnnotations)
     }

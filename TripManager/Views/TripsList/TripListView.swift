@@ -20,7 +20,9 @@ struct TripListView: View {
     var body: some View {
         VStack {
             MapView(annotations: $viewModel.annotations,
-                    polylineCoordinates: $viewModel.polylineCoordinates)
+                    polylineCoordinates: $viewModel.polylineCoordinates) { id in
+                        self.viewModel.annotationSelected(id)
+            }
             if viewModel.status == .loading {
                 loadingView
             } else if viewModel.status == .loaded {

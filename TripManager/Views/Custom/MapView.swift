@@ -12,6 +12,7 @@ import MapKit
 struct MapView: UIViewRepresentable {
     @Binding var annotations: [Annotation]
     @Binding var polylineCoordinates: [Coordinates]
+    var annotationSelected: (Int?) -> Void
 
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
@@ -34,7 +35,8 @@ struct MapView: UIViewRepresentable {
         let newAnnotations = annotations.map { annotation in
             TripAnnotation(annotation.address,
                            CLLocationCoordinate2D(latitude: annotation.coordinates.latitude,
-                                                  longitude: annotation.coordinates.longitude))
+                                                  longitude: annotation.coordinates.longitude),
+                           annotation.id)
         }
         mapView.addAnnotations(newAnnotations)
         mapView.fitAll()
@@ -56,6 +58,7 @@ extension MapView {
     struct Annotation {
         var address: String
         var coordinates: Coordinates
+        var id: Int?
     }
 
     struct Coordinates {
@@ -86,6 +89,18 @@ extension MapView {
             view?.displayPriority = .required
             view?.annotation = annotation
             return view
+        }
+
+        func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+            if let annotation = view.annotation as? TripAnnotation {
+                control.annotationSelected(annotation.id)
+            }
+        }
+
+        func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
+            if (view.annotation as? TripAnnotation) != nil {
+                control.annotationSelected(nil)
+            }
         }
     }
 }

@@ -11,9 +11,11 @@ import MapKit
 final class TripAnnotation: NSObject, MKAnnotation {
     let title: String?
     let coordinate: CLLocationCoordinate2D
+    let id: Int?
 
-    init(_ address: String?, _ coordinates: CLLocationCoordinate2D) {
+    init(_ address: String?, _ coordinates: CLLocationCoordinate2D, _ id: Int?) {
         self.title = address
         self.coordinate = coordinates
+        self.id = id
     }
 }
