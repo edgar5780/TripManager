@@ -21,12 +21,24 @@ struct TripListView: View {
         VStack {
             MapView(annotations: $viewModel.annotations,
                     polylineCoordinates: $viewModel.polylineCoordinates)
-            if viewModel.dataSource.isEmpty {
-                emptySection
-            } else {
-                tripsList
+            if viewModel.status == .loading {
+                loadingView
+            } else if viewModel.status == .loaded {
+                if viewModel.dataSource.isEmpty {
+                    emptySection
+                } else {
+                    tripsList
+                }
             }
         }.edgesIgnoringSafeArea(.top)
+    }
+
+    var loadingView: some View {
+        VStack {
+            Spacer()
+            ActivityIndicatorView()
+            Spacer()
+        }
     }
 
     var emptySection: some View {

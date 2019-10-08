@@ -14,6 +14,7 @@ final class TripListViewModel: ObservableObject {
     @Published var dataSource: [TripListRowView.UIModel]
     @Published var annotations: [MapView.Annotation]
     @Published var polylineCoordinates: [MapView.Coordinates]
+    @Published var status: Status
     private var trips: [Trip]
     private let getTripsAvailableUseCase: GetTripsAvailableUseCase
     private var disposables = Set<AnyCancellable>()
@@ -24,6 +25,7 @@ final class TripListViewModel: ObservableObject {
         trips = []
         annotations = []
         polylineCoordinates = []
+        status = .loading
     }
 
     func fetch() {
@@ -35,8 +37,9 @@ final class TripListViewModel: ObservableObject {
                 case .failure:
                     self.trips = []
                     self.dataSource = []
+                    self.status = .loaded
                 case .finished:
-                    break
+                    self.status = .loaded
                 }
                 }, receiveValue: { [weak self] trips in
                     guard let self = self else { return }
@@ -82,5 +85,12 @@ final class TripListViewModel: ObservableObject {
         })
         guard let polyline = polylineCoordinates else { return }
         self.polylineCoordinates = polyline
+    }
+}
+
+extension TripListViewModel {
+    enum Status {
+        case loading
+        case loaded
     }
 }
