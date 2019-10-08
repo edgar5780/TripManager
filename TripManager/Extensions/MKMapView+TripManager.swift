@@ -20,10 +20,10 @@ extension MKMapView {
             zoomRect = zoomRect.union(pointRect)
         }
         setVisibleMapRect(zoomRect,
-                          edgePadding: UIEdgeInsets(top: 100,
-                                                    left: 100,
-                                                    bottom: 100,
-                                                    right: 100),
+                          edgePadding: UIEdgeInsets(top: 50,
+                                                    left: 50,
+                                                    bottom: 50,
+                                                    right: 50),
                           animated: true)
     }
 }

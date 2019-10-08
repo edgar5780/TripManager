@@ -76,6 +76,16 @@ extension MapView {
             polylineRenderer.lineWidth = 5
             return polylineRenderer
         }
-    }
 
+        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+            let reuseIdentifier = "annotationView"
+            var view = mapView.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier)
+            if view == nil {
+                view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: reuseIdentifier)
+            }
+            view?.displayPriority = .required
+            view?.annotation = annotation
+            return view
+        }
+    }
 }

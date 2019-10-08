@@ -13,5 +13,4 @@ public enum TripManagerError: Error {
     case parse(description: String)
     case api(description: String)
     case fileNotFound
-    case dependencyInjection
 }
