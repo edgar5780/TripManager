@@ -11,7 +11,7 @@ import Combine
 import TripManagerDomain
 
 final class TripsRepositoryImp: TripsRepository {
-    let remoteDataSource: TripsRemoteDataSource
+    private let remoteDataSource: TripsRemoteDataSource
 
     init(_ remoteDataSource: TripsRemoteDataSource) {
         self.remoteDataSource = remoteDataSource

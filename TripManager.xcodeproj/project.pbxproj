@@ -20,6 +20,17 @@
 		6D0C20442348EC4C00D8D20B /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C20432348EC4C00D8D20B /* Point.swift */; };
 		6D0C20462348ED1F00D8D20B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C20452348ED1F00D8D20B /* Location.swift */; };
 		6D0C20482348ED6D00D8D20B /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C20472348ED6D00D8D20B /* Stop.swift */; };
+		6D0CD345234D05A000573048 /* StopDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0CD344234D05A000573048 /* StopDetailsResponse.swift */; };
+		6D0CD347234D05BB00573048 /* StopDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0CD346234D05BB00573048 /* StopDetails.swift */; };
+		6D0CD34A234D085B00573048 /* StopsRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0CD349234D085B00573048 /* StopsRemoteDataSource.swift */; };
+		6D0CD34C234D08C300573048 /* StopsRemoteDataSourceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0CD34B234D08C300573048 /* StopsRemoteDataSourceImp.swift */; };
+		6D0CD34E234D08D000573048 /* StopsRemoteDataSourceMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0CD34D234D08D000573048 /* StopsRemoteDataSourceMockup.swift */; };
+		6D0CD351234D0C5200573048 /* StopsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0CD350234D0C5200573048 /* StopsRepository.swift */; };
+		6D0CD353234D0CB000573048 /* StopsRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0CD352234D0CB000573048 /* StopsRepositoryImp.swift */; };
+		6D0CD355234D0DFC00573048 /* stop.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D0CD354234D0DFC00573048 /* stop.json */; };
+		6D0CD357234D0E6D00573048 /* StopsAPIClientMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0CD356234D0E6D00573048 /* StopsAPIClientMockup.swift */; };
+		6D0CD35B234D0EE700573048 /* StopsRemoteDaraSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0CD35A234D0EE700573048 /* StopsRemoteDaraSourceTest.swift */; };
+		6D0CD35D234D0F0A00573048 /* StopsRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0CD35C234D0F0A00573048 /* StopsRepositoryTest.swift */; };
 		6D11540A234BAF0F00DF4228 /* Date+TripManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D115409234BAF0F00DF4228 /* Date+TripManager.swift */; };
 		6D115413234BB21500DF4228 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D115412234BB21500DF4228 /* Strings.swift */; };
 		6D115418234BB44700DF4228 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D115417234BB44700DF4228 /* Localizable.strings */; };
@@ -175,6 +186,17 @@
 		6D0C20432348EC4C00D8D20B /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		6D0C20452348ED1F00D8D20B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		6D0C20472348ED6D00D8D20B /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
+		6D0CD344234D05A000573048 /* StopDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopDetailsResponse.swift; sourceTree = "<group>"; };
+		6D0CD346234D05BB00573048 /* StopDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopDetails.swift; sourceTree = "<group>"; };
+		6D0CD349234D085B00573048 /* StopsRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsRemoteDataSource.swift; sourceTree = "<group>"; };
+		6D0CD34B234D08C300573048 /* StopsRemoteDataSourceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsRemoteDataSourceImp.swift; sourceTree = "<group>"; };
+		6D0CD34D234D08D000573048 /* StopsRemoteDataSourceMockup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsRemoteDataSourceMockup.swift; sourceTree = "<group>"; };
+		6D0CD350234D0C5200573048 /* StopsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsRepository.swift; sourceTree = "<group>"; };
+		6D0CD352234D0CB000573048 /* StopsRepositoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsRepositoryImp.swift; sourceTree = "<group>"; };
+		6D0CD354234D0DFC00573048 /* stop.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stop.json; sourceTree = "<group>"; };
+		6D0CD356234D0E6D00573048 /* StopsAPIClientMockup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsAPIClientMockup.swift; sourceTree = "<group>"; };
+		6D0CD35A234D0EE700573048 /* StopsRemoteDaraSourceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsRemoteDaraSourceTest.swift; sourceTree = "<group>"; };
+		6D0CD35C234D0F0A00573048 /* StopsRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsRepositoryTest.swift; sourceTree = "<group>"; };
 		6D115409234BAF0F00DF4228 /* Date+TripManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+TripManager.swift"; sourceTree = "<group>"; };
 		6D115412234BB21500DF4228 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		6D115417234BB44700DF4228 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -334,6 +356,7 @@
 		6D0C20372348E6C000D8D20B /* Remote */ = {
 			isa = PBXGroup;
 			children = (
+				6D0CD348234D084B00573048 /* Stops */,
 				6DEA8B27234939C90041F4C1 /* Trips */,
 			);
 			path = Remote;
@@ -346,8 +369,27 @@
 				6DEA8B21234937360041F4C1 /* PointResponse.swift */,
 				6DEA8B23234937450041F4C1 /* LocationResponse.swift */,
 				6DEA8B25234937530041F4C1 /* StopResponse.swift */,
+				6D0CD344234D05A000573048 /* StopDetailsResponse.swift */,
 			);
 			path = Responses;
+			sourceTree = "<group>";
+		};
+		6D0CD348234D084B00573048 /* Stops */ = {
+			isa = PBXGroup;
+			children = (
+				6D0CD349234D085B00573048 /* StopsRemoteDataSource.swift */,
+				6D0CD34B234D08C300573048 /* StopsRemoteDataSourceImp.swift */,
+				6D0CD34D234D08D000573048 /* StopsRemoteDataSourceMockup.swift */,
+			);
+			path = Stops;
+			sourceTree = "<group>";
+		};
+		6D0CD34F234D0C2C00573048 /* Stops */ = {
+			isa = PBXGroup;
+			children = (
+				6D0CD350234D0C5200573048 /* StopsRepository.swift */,
+			);
+			path = Stops;
 			sourceTree = "<group>";
 		};
 		6D11540B234BB17A00DF4228 /* Resources */ = {
@@ -442,18 +484,19 @@
 		6D69352E234A80530090D021 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				6D693530234A80AD0090D021 /* Trip */,
+				6D0CD34F234D0C2C00573048 /* Stops */,
+				6D693530234A80AD0090D021 /* Trips */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
 		};
-		6D693530234A80AD0090D021 /* Trip */ = {
+		6D693530234A80AD0090D021 /* Trips */ = {
 			isa = PBXGroup;
 			children = (
 				6DEA8B2C23493AF20041F4C1 /* TripsRepository.swift */,
 				6D693531234A80CC0090D021 /* TripsRepositoryMockup.swift */,
 			);
-			path = Trip;
+			path = Trips;
 			sourceTree = "<group>";
 		};
 		6D69353C234A85550090D021 /* TripManagerDomainTests */ = {
@@ -603,6 +646,7 @@
 				6D0C20432348EC4C00D8D20B /* Point.swift */,
 				6D0C20452348ED1F00D8D20B /* Location.swift */,
 				6D0C20472348ED6D00D8D20B /* Stop.swift */,
+				6D0CD346234D05BB00573048 /* StopDetails.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -658,6 +702,7 @@
 			isa = PBXGroup;
 			children = (
 				6DEA8B2E23493B290041F4C1 /* TripsRepositoryImp.swift */,
+				6D0CD352234D0CB000573048 /* StopsRepositoryImp.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -666,6 +711,7 @@
 			isa = PBXGroup;
 			children = (
 				6DEA8B3123493CCB0041F4C1 /* TripsAPIClientMockup.swift */,
+				6D0CD356234D0E6D00573048 /* StopsAPIClientMockup.swift */,
 			);
 			path = Mockups;
 			sourceTree = "<group>";
@@ -674,6 +720,7 @@
 			isa = PBXGroup;
 			children = (
 				6DEA8B3423493DC90041F4C1 /* trips.json */,
+				6D0CD354234D0DFC00573048 /* stop.json */,
 			);
 			path = Mockups;
 			sourceTree = "<group>";
@@ -682,6 +729,7 @@
 			isa = PBXGroup;
 			children = (
 				6DEA8B3A2349401C0041F4C1 /* TripsRemoteDataSourceTest.swift */,
+				6D0CD35A234D0EE700573048 /* StopsRemoteDaraSourceTest.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -698,6 +746,7 @@
 			isa = PBXGroup;
 			children = (
 				6DEA8B41234956EB0041F4C1 /* TripsRepositoryTest.swift */,
+				6D0CD35C234D0F0A00573048 /* StopsRepositoryTest.swift */,
 			);
 			path = Respositories;
 			sourceTree = "<group>";
@@ -985,6 +1034,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DEA8B3523493DC90041F4C1 /* trips.json in Resources */,
+				6D0CD355234D0DFC00573048 /* stop.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1176,9 +1226,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D0CD35B234D0EE700573048 /* StopsRemoteDaraSourceTest.swift in Sources */,
 				6DEA8B42234956EB0041F4C1 /* TripsRepositoryTest.swift in Sources */,
 				6D08C5D12348C63900736E19 /* URLFactoryTest.swift in Sources */,
 				6DEA8B3B2349401C0041F4C1 /* TripsRemoteDataSourceTest.swift in Sources */,
+				6D0CD35D234D0F0A00573048 /* StopsRepositoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1227,6 +1279,7 @@
 				6D69352F234A807E0090D021 /* TripsRepository.swift in Sources */,
 				6D0C20442348EC4C00D8D20B /* Point.swift in Sources */,
 				6D0C20402348E93A00D8D20B /* Trip.swift in Sources */,
+				6D0CD347234D05BB00573048 /* StopDetails.swift in Sources */,
 				6D0C20462348ED1F00D8D20B /* Location.swift in Sources */,
 				6D1AFB00234A9A9600EF8131 /* Container+TripManagerDomain.swift in Sources */,
 				6D0C20422348EB6B00D8D20B /* TripStatus.swift in Sources */,
@@ -1234,6 +1287,7 @@
 				6D693534234A82560090D021 /* GetTripsAvailableUseCaseImp.swift in Sources */,
 				6D0C20482348ED6D00D8D20B /* Stop.swift in Sources */,
 				6D693532234A80CC0090D021 /* TripsRepositoryMockup.swift in Sources */,
+				6D0CD351234D0C5200573048 /* StopsRepository.swift in Sources */,
 				6D72455B234CEAA7006751D7 /* GetTripsAvailableUseCaseMockup.swift in Sources */,
 				6D693536234A83EF0090D021 /* GetTripsAvailableUseCase.swift in Sources */,
 			);
@@ -1244,19 +1298,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DEA8B3723493E4E0041F4C1 /* JSONReader.swift in Sources */,
+				6D0CD353234D0CB000573048 /* StopsRepositoryImp.swift in Sources */,
 				6D0C20392348E6D600D8D20B /* TripsRemoteDataSourceImp.swift in Sources */,
+				6D0CD34A234D085B00573048 /* StopsRemoteDataSource.swift in Sources */,
 				6DEA8B24234937450041F4C1 /* LocationResponse.swift in Sources */,
 				6DEA8B3D234953E70041F4C1 /* TripsRemoteDataSourceMockup.swift in Sources */,
 				6DAE5F3E2347F35800C6FFFA /* APIClientImp.swift in Sources */,
+				6D0CD34C234D08C300573048 /* StopsRemoteDataSourceImp.swift in Sources */,
 				6DAE5F412347F42600C6FFFA /* Decoder.swift in Sources */,
 				6DEA8B22234937360041F4C1 /* PointResponse.swift in Sources */,
 				6DAE5F4D2347FFE700C6FFFA /* URLFactory.swift in Sources */,
 				6D1AFAFD234A9A5300EF8131 /* Container+TripManagerData.swift in Sources */,
 				6DAE5F392347F11D00C6FFFA /* APIClient.swift in Sources */,
 				6DEA8B29234939E80041F4C1 /* TripsRemoteDataSource.swift in Sources */,
+				6D0CD345234D05A000573048 /* StopDetailsResponse.swift in Sources */,
 				6DEA8B3223493CCB0041F4C1 /* TripsAPIClientMockup.swift in Sources */,
+				6D0CD357234D0E6D00573048 /* StopsAPIClientMockup.swift in Sources */,
 				6DAE5F472347FD9E00C6FFFA /* APIEndpoint.swift in Sources */,
 				6DAE5F4F234802CB00C6FFFA /* URLComponents+TripManagerData.swift in Sources */,
+				6D0CD34E234D08D000573048 /* StopsRemoteDataSourceMockup.swift in Sources */,
 				6DAE5F4B2347FEC700C6FFFA /* APIMethod.swift in Sources */,
 				6D0C20352348E44B00D8D20B /* BaseRemoteDataSource.swift in Sources */,
 				6D0C203C2348E8C000D8D20B /* TripResponse.swift in Sources */,
