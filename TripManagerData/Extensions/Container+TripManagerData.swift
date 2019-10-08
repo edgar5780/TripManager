@@ -22,12 +22,20 @@ public extension Container {
             let remoteDataSource = resolver.resolve(TripsRemoteDataSource.self)!
             return TripsRepositoryImp(remoteDataSource)
         }
+        register(StopsRepository.self) { resolver in
+            let remoteDataSource = resolver.resolve(StopsRemoteDataSource.self)!
+            return StopsRepositoryImp(remoteDataSource)
+        }
     }
 
     private func registerRemoteDataSource() {
         register(TripsRemoteDataSource.self) { resolver in
             let apiClient = resolver.resolve(APIClient.self)!
             return TripsRemoteDataSourceImp(apiClient)
+        }
+        register(StopsRemoteDataSource.self) { resolver in
+            let apiClient = resolver.resolve(APIClient.self)!
+            return StopsRemoteDataSourceImp(apiClient)
         }
     }
 

@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 import Polyline
 
-class PolylineDecoder {
+final class PolylineDecoder {
     func decode(_ polyline: String) -> [CLLocation]? {
         let polylineDecoder = Polyline(encodedPolyline: polyline)
         return polylineDecoder.locations
