@@ -21,24 +21,26 @@ struct TripListView: View {
         VStack {
             MapView(annotations: $viewModel.annotations,
                     polylineCoordinates: $viewModel.polylineCoordinates)
-            List {
-                if viewModel.dataSource.isEmpty {
-                    emptySection
-                } else {
-                    tripsSection
-                }
+            if viewModel.dataSource.isEmpty {
+                emptySection
+            } else {
+                tripsList
             }
         }.edgesIgnoringSafeArea(.top)
     }
 
     var emptySection: some View {
-        Section {
-            Text("No results")
+        VStack {
+            Spacer()
+            Text(Strings.noResults.localize())
+                .font(.title)
+                .bold()
+            Spacer()
         }
     }
 
-    var tripsSection: some View {
-        ForEach(viewModel.dataSource) { item in
+    var tripsList: some View {
+        List(viewModel.dataSource) { item in
             Button(action: {
                 self.viewModel.itemSelected(item.id)
             }, label: {

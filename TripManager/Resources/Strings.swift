@@ -10,6 +10,7 @@ import Foundation
 
 enum Strings: String {
     case driverName = "DriverName"
+    case noResults = "NoResults"
 
     func localize(_ args: CVarArg...) -> String {
         let localizedString = NSLocalizedString(self.rawValue, comment: "")
