@@ -38,6 +38,7 @@ class GetTripsAvailableUseCaseTest: XCTestCase {
         }, receiveValue: { trips in
             XCTAssertEqual(trips.count, 1)
         }).store(in: &disposables!)
+        wait(for: [expectation], timeout: 5.0)
     }
 
     func testRepositoryGetTripsFails() {
@@ -61,5 +62,6 @@ class GetTripsAvailableUseCaseTest: XCTestCase {
         }, receiveValue: { _ in
             XCTFail("invoke() should fail.")
         }).store(in: &disposables!)
+        wait(for: [expectation], timeout: 5.0)
     }
 }
