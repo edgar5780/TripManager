@@ -13,9 +13,9 @@ final class TripAnnotation: NSObject, MKAnnotation {
     let coordinate: CLLocationCoordinate2D
     let id: Int?
 
-    init(_ address: String?, _ coordinates: CLLocationCoordinate2D, _ id: Int?) {
+    init(_ address: String?, _ coordinate: CLLocationCoordinate2D, _ id: Int?) {
         self.title = address
-        self.coordinate = coordinates
+        self.coordinate = coordinate
         self.id = id
     }
 }

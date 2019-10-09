@@ -14,7 +14,7 @@ final class TripListViewModel: ObservableObject {
     @Published var dataSource: [TripListRowView.UIModel]
     @Published var stopDetails: StopDetails?
     @Published var annotations: [MapView.Annotation]
-    @Published var polylineCoordinates: [MapView.Coordinates]
+    @Published var polylineCoordinates: [MapView.Coordinate]
     @Published var status: Status
     @Published var mapStatus: MapView.Status
     private var trips: [Trip]
@@ -98,14 +98,14 @@ final class TripListViewModel: ObservableObject {
 
     private func getAnnotations(_ trip: Trip) {
         annotations = [.init(address: trip.origin.address,
-                             coordinates: .init(latitude: trip.origin.point.latitude,
+                             coordinate: .init(latitude: trip.origin.point.latitude,
                                                 longitude: trip.origin.point.longitude)),
                        .init(address: trip.destination.address,
-                             coordinates: .init(latitude: trip.destination.point.latitude,
+                             coordinate: .init(latitude: trip.destination.point.latitude,
                                                 longitude: trip.destination.point.longitude))]
         let stopAnnotations = trip.stops.map { stop in
             MapView.Annotation(address: "",
-                               coordinates: .init(latitude: stop.point.latitude,
+                               coordinate: .init(latitude: stop.point.latitude,
                                                   longitude: stop.point.longitude),
                                id: stop.id)
         }
@@ -114,8 +114,8 @@ final class TripListViewModel: ObservableObject {
 
     private func getPolyline(_ polyline: String) {
         let polylineCoordinates = PolylineDecoder().decode(polyline)?.map({ location in
-            MapView.Coordinates(latitude: location.coordinate.latitude,
-                                longitude: location.coordinate.longitude)
+            MapView.Coordinate(latitude: location.coordinate.latitude,
+                               longitude: location.coordinate.longitude)
         })
         guard let polyline = polylineCoordinates else { return }
         self.polylineCoordinates = polyline

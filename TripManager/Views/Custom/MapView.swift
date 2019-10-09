@@ -11,7 +11,7 @@ import MapKit
 
 struct MapView: UIViewRepresentable {
     @Binding var annotations: [Annotation]
-    @Binding var polylineCoordinates: [Coordinates]
+    @Binding var polylineCoordinates: [Coordinate]
     @Binding var status: Status
     var annotationSelected: (Int?) -> Void
 
@@ -40,8 +40,8 @@ struct MapView: UIViewRepresentable {
         guard !annotations.isEmpty else { return }
         let newAnnotations = annotations.map { annotation in
             TripAnnotation(annotation.address,
-                           CLLocationCoordinate2D(latitude: annotation.coordinates.latitude,
-                                                  longitude: annotation.coordinates.longitude),
+                           CLLocationCoordinate2D(latitude: annotation.coordinate.latitude,
+                                                  longitude: annotation.coordinate.longitude),
                            annotation.id)
         }
         mapView.addAnnotations(newAnnotations)
@@ -68,11 +68,11 @@ extension MapView {
 
     struct Annotation {
         var address: String
-        var coordinates: Coordinates
+        var coordinate: Coordinate
         var id: Int?
     }
 
-    struct Coordinates {
+    struct Coordinate {
         var latitude: Double
         var longitude: Double
     }
