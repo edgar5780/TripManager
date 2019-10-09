@@ -26,12 +26,12 @@ struct TripListView: View {
             }
             if viewModel.status == .loading {
                 loadingView
-            } else if viewModel.status == .loaded {
-                if viewModel.dataSource.isEmpty {
-                    emptySection
-                } else {
-                    tripsList
-                }
+            } else if viewModel.status == .tripList {
+                tripsList
+            } else if viewModel.status == .empty {
+                emptySection
+            } else if viewModel.status == .details {
+                detailsView
             }
         }.edgesIgnoringSafeArea(.top)
     }
@@ -49,6 +49,7 @@ struct TripListView: View {
             Spacer()
             Text(Strings.noResults.localize())
                 .font(.title)
+                .foregroundColor(.customOrange)
                 .bold()
             Spacer()
         }
@@ -61,6 +62,14 @@ struct TripListView: View {
             }, label: {
                 TripListRowView(item)
             })
+        }
+    }
+
+    var detailsView: some View {
+        VStack {
+            Spacer()
+            Text(viewModel.stopDetails?.userName ?? "")
+            Spacer()
         }
     }
 }

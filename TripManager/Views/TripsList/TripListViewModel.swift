@@ -39,16 +39,17 @@ final class TripListViewModel: ObservableObject {
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { [weak self] completion in
                 guard let self = self else { return }
-                self.status = .loaded
                 switch completion {
                 case .failure:
                     self.trips = []
                     self.dataSource = []
+                    self.status = .empty
                 case .finished:
                     break
                 }
                 }, receiveValue: { [weak self] trips in
                     guard let self = self else { return }
+                    self.status = trips.isEmpty ? .empty : .tripList
                     self.trips = trips
                     self.dataSource = trips.map { trip in
                         .init(driverName: trip.driverName,
@@ -72,18 +73,22 @@ final class TripListViewModel: ObservableObject {
 
     func annotationSelected(_ id: Int?) {
         mapStatus = .loaded
-        guard let id = id else { return }
+        guard let id = id else {
+            stopDetails = nil
+            status = .tripList
+            return
+        }
         status = .loading
         getStopUseCase.invoke(id)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { [weak self] completion in
                 guard let self = self else { return }
-                self.status = .loaded
                 switch completion {
                 case .failure:
                     self.stopDetails = nil
+                    self.status = .tripList
                 case .finished:
-                    break
+                    self.status = .details
                 }
                 }, receiveValue: { [weak self] stopDetails in
                     guard let self = self else { return }
@@ -120,6 +125,8 @@ final class TripListViewModel: ObservableObject {
 extension TripListViewModel {
     enum Status {
         case loading
-        case loaded
+        case tripList
+        case empty
+        case details
     }
 }

@@ -16,8 +16,10 @@ class TripListViewModelTest: XCTestCase {
     var disposables: Set<AnyCancellable>?
 
     override func setUp() {
-        let useCase = GetTripsAvailableUseCaseMockup()
-        viewModel = TripListViewModel(useCase)
+        let getTripsAvailableUseCase = GetTripsAvailableUseCaseMockup()
+        let getStopUseCase = GetStopUseCaseMockup()
+        viewModel = TripListViewModel(getTripsAvailableUseCase,
+                                      getStopUseCase)
         disposables = Set<AnyCancellable>()
     }
 
