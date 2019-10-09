@@ -43,4 +43,26 @@ class TripListViewModelTest: XCTestCase {
         viewModel?.fetch()
         wait(for: [expectation], timeout: 5.0)
     }
+
+    func testStopDetailsFetch() {
+        let expectation = XCTestExpectation(description: "Stop details fetch")
+        var count = 0
+        viewModel?.$stopDetails.sink { stop in
+            if count == 0 {
+                XCTAssertNil(stop)
+            } else if count == 1 {
+                XCTAssertEqual(stop?.stopTime, Date(timeIntervalSince1970: 1570558839))
+                XCTAssertEqual(stop?.paid, true)
+                XCTAssertEqual(stop?.address, "Ramblas, Barcelona")
+                XCTAssertEqual(stop?.userName, "Manuel Gomez")
+                XCTAssertEqual(stop?.point.latitude, 41.37653)
+                XCTAssertEqual(stop?.point.longitude, 2.17924)
+                XCTAssertEqual(stop?.price, 1.5)
+                expectation.fulfill()
+            }
+            count += 1
+        }.store(in: &disposables!)
+        viewModel?.annotationSelected(0)
+        wait(for: [expectation], timeout: 5.0)
+    }
 }
