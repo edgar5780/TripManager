@@ -14,6 +14,7 @@ public extension Container {
     func registerData() {
         registerRepositories()
         registerRemoteDataSource()
+        registerLocalDataSource()
         registerAPIClient()
     }
 
@@ -24,7 +25,8 @@ public extension Container {
         }
         register(StopsRepository.self) { resolver in
             let remoteDataSource = resolver.resolve(StopsRemoteDataSource.self)!
-            return StopsRepositoryImp(remoteDataSource)
+            let localDataSource = resolver.resolve(StopsLocalDataSource.self)!
+            return StopsRepositoryImp(remoteDataSource, localDataSource)
         }
     }
 
@@ -36,6 +38,12 @@ public extension Container {
         register(StopsRemoteDataSource.self) { resolver in
             let apiClient = resolver.resolve(APIClient.self)!
             return StopsRemoteDataSourceImp(apiClient)
+        }
+    }
+
+    private func registerLocalDataSource() {
+        register(StopsLocalDataSource.self) { _ in
+            return StopsLocalDataSourceImp()
         }
     }
 

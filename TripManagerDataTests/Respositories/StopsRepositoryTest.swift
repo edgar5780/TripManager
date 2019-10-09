@@ -24,9 +24,10 @@ class StopsRepositoryTest: XCTestCase {
         disposables = nil
     }
 
-    func testRepositoryGetStopSuccess() {
+    func testRepositoryGetStopSuccessRemote() {
         let remoteDataSource = StopsRemoteDataSourceSuccessMockup()
-        repository = StopsRepositoryImp(remoteDataSource)
+        let localDataSource = StopsLocalDataSourceFailureMockup()
+        repository = StopsRepositoryImp(remoteDataSource, localDataSource)
         let expectation = XCTestExpectation(description: "getStop() finished")
         repository?.getStop(0).sink(receiveCompletion: { completion in
             switch completion {
@@ -48,9 +49,10 @@ class StopsRepositoryTest: XCTestCase {
         wait(for: [expectation], timeout: 5.0)
     }
 
-    func testRepositoryGetTripsFails() {
+    func testRepositoryGetTripsFailsRemote() {
         let remoteDataSource = StopsRemoteDataSourceFailureMockup()
-        repository = StopsRepositoryImp(remoteDataSource)
+        let localDataSource = StopsLocalDataSourceFailureMockup()
+        repository = StopsRepositoryImp(remoteDataSource, localDataSource)
         let expectation = XCTestExpectation(description: "getStop() fails")
         repository?.getStop(0).sink(receiveCompletion: { completion in
             switch completion {
@@ -68,6 +70,56 @@ class StopsRepositoryTest: XCTestCase {
             }
         }, receiveValue: { _ in
             XCTFail("getStop() should fail.")
+        }).store(in: &disposables!)
+        wait(for: [expectation], timeout: 5.0)
+    }
+
+    func testRepositoryGetStopSuccessLocal() {
+        let remoteDataSource = StopsRemoteDataSourceSuccessMockup()
+        let localDataSource = StopsLocalDataSourceSuccessMockup()
+        repository = StopsRepositoryImp(remoteDataSource, localDataSource)
+        let expectation = XCTestExpectation(description: "getStop() finished")
+        repository?.getStop(0).sink(receiveCompletion: { completion in
+            switch completion {
+            case .finished:
+                expectation.fulfill()
+            case .failure(let error):
+                XCTFail("getStop() shouldn't fail. Error: \(error)")
+                expectation.fulfill()
+            }
+        }, receiveValue: { stop in
+            XCTAssertEqual(stop.stopTime, Date(timeIntervalSince1970: 1570558839))
+            XCTAssertEqual(stop.paid, true)
+            XCTAssertEqual(stop.address, "Ramblas, Barcelona")
+            XCTAssertEqual(stop.userName, "Manuel Diaz")
+            XCTAssertEqual(stop.point.latitude, 41.37653)
+            XCTAssertEqual(stop.point.longitude, 2.17924)
+            XCTAssertEqual(stop.price, 1.5)
+        }).store(in: &disposables!)
+        wait(for: [expectation], timeout: 5.0)
+    }
+
+    func testRepositoryGetTripsFailsLocal() {
+        let remoteDataSource = StopsRemoteDataSourceFailureMockup()
+        let localDataSource = StopsLocalDataSourceSuccessMockup()
+        repository = StopsRepositoryImp(remoteDataSource, localDataSource)
+        let expectation = XCTestExpectation(description: "getStop() fails")
+        repository?.getStop(0).sink(receiveCompletion: { completion in
+            switch completion {
+            case .finished:
+                expectation.fulfill()
+            case .failure(let error):
+                XCTFail("getStop() shouldn't fail. Error: \(error)")
+                expectation.fulfill()
+            }
+        }, receiveValue: { stop in
+            XCTAssertEqual(stop.stopTime, Date(timeIntervalSince1970: 1570558839))
+            XCTAssertEqual(stop.paid, true)
+            XCTAssertEqual(stop.address, "Ramblas, Barcelona")
+            XCTAssertEqual(stop.userName, "Manuel Diaz")
+            XCTAssertEqual(stop.point.latitude, 41.37653)
+            XCTAssertEqual(stop.point.longitude, 2.17924)
+            XCTAssertEqual(stop.price, 1.5)
         }).store(in: &disposables!)
         wait(for: [expectation], timeout: 5.0)
     }

@@ -9,8 +9,10 @@
 import Foundation
 
 public enum TripManagerError: Error {
+    case generic
     case badRequest
     case parse(description: String)
     case api(description: String)
     case fileNotFound
+    case elementNotFound
 }
