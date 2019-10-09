@@ -30,7 +30,7 @@ final class TripListViewModel: ObservableObject {
         trips = []
         annotations = []
         polylineCoordinates = []
-        status = .loading
+        status = .loadingTrips
         mapStatus = .needsLoad
     }
 
@@ -78,7 +78,7 @@ final class TripListViewModel: ObservableObject {
             status = .tripList
             return
         }
-        status = .loading
+        status = .loadingDetails
         getStopUseCase.invoke(id)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { [weak self] completion in
@@ -124,9 +124,10 @@ final class TripListViewModel: ObservableObject {
 
 extension TripListViewModel {
     enum Status {
-        case loading
+        case loadingTrips
         case tripList
         case empty
+        case loadingDetails
         case details
     }
 }

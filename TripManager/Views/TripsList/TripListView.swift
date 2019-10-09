@@ -19,28 +19,35 @@ struct TripListView: View {
 
     var body: some View {
         VStack {
+            if viewModel.status == .loadingDetails {
+                loadingView
+            } else if viewModel.status == .details {
+                detailsView
+            }
             MapView(annotations: $viewModel.annotations,
                     polylineCoordinates: $viewModel.polylineCoordinates,
                     status: $viewModel.mapStatus) { id in
                         self.viewModel.annotationSelected(id)
-            }
-            if viewModel.status == .loading {
+            }.edgesIgnoringSafeArea(.top)
+            if viewModel.status == .loadingTrips {
                 loadingView
-            } else if viewModel.status == .tripList {
-                tripsList
             } else if viewModel.status == .empty {
                 emptySection
-            } else if viewModel.status == .details {
-                detailsView
+            } else {
+                tripsList
             }
-        }.edgesIgnoringSafeArea(.top)
+        }
     }
 
     var loadingView: some View {
         VStack {
-            Spacer()
+            if viewModel.status == .loadingTrips {
+                Spacer()
+            }
             ActivityIndicatorView()
-            Spacer()
+            if viewModel.status == .loadingTrips {
+                Spacer()
+            }
         }
     }
 
@@ -66,25 +73,26 @@ struct TripListView: View {
     }
 
     var detailsView: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Spacer()
+        VStack(alignment: .leading, spacing: 5) {
             Text(viewModel.stopDetails?.address ?? "")
                 .foregroundColor(.customOrange)
                 .bold()
             Text(viewModel.stopDetails?.stopTime.getFormattedDate() ?? "")
+                .font(.caption)
                 .foregroundColor(.gray)
             HStack {
                 Text(viewModel.stopDetails?.userName ?? "")
+                    .font(.caption)
                     .foregroundColor(.gray)
                 Spacer()
                 Group {
                     Text(viewModel.stopDetails?.paid ?? false ? "Paid" : "Not paid")
+                        .font(.caption)
                         .foregroundColor(.white)
                         .padding(EdgeInsets(top: 3, leading: 3, bottom: 3, trailing: 3))
                 }.background(viewModel.stopDetails?.paid ?? false ? Color.green : Color.red)
                     .cornerRadius(5)
             }
-            Spacer()
         }.padding(EdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12))
     }
 }
