@@ -66,10 +66,25 @@ struct TripListView: View {
     }
 
     var detailsView: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 12) {
             Spacer()
-            Text(viewModel.stopDetails?.userName ?? "")
+            Text(viewModel.stopDetails?.address ?? "")
+                .foregroundColor(.customOrange)
+                .bold()
+            Text(viewModel.stopDetails?.stopTime.getFormattedDate() ?? "")
+                .foregroundColor(.gray)
+            HStack {
+                Text(viewModel.stopDetails?.userName ?? "")
+                    .foregroundColor(.gray)
+                Spacer()
+                Group {
+                    Text(viewModel.stopDetails?.paid ?? false ? "Paid" : "Not paid")
+                        .foregroundColor(.white)
+                        .padding(EdgeInsets(top: 3, leading: 3, bottom: 3, trailing: 3))
+                }.background(viewModel.stopDetails?.paid ?? false ? Color.green : Color.red)
+                    .cornerRadius(5)
+            }
             Spacer()
-        }
+        }.padding(EdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12))
     }
 }
