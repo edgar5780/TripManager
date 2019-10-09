@@ -12,6 +12,7 @@ import MapKit
 struct MapView: UIViewRepresentable {
     @Binding var annotations: [Annotation]
     @Binding var polylineCoordinates: [Coordinates]
+    @Binding var status: Status
     var annotationSelected: (Int?) -> Void
 
     func makeUIView(context: Context) -> MKMapView {
@@ -25,8 +26,13 @@ struct MapView: UIViewRepresentable {
     }
 
     func updateUIView(_ view: MKMapView, context: Context) {
-        updateAnnotations(view)
-        updatePolyline(view)
+        switch status {
+        case .needsLoad:
+            updateAnnotations(view)
+            updatePolyline(view)
+        case .loaded:
+            break
+        }
     }
 
     private func updateAnnotations(_ mapView: MKMapView) {
@@ -55,6 +61,11 @@ struct MapView: UIViewRepresentable {
 }
 
 extension MapView {
+    enum Status {
+        case needsLoad
+        case loaded
+    }
+
     struct Annotation {
         var address: String
         var coordinates: Coordinates

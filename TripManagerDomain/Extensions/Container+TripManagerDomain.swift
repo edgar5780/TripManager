@@ -15,5 +15,9 @@ public extension Container {
             let repository = resolver.resolve(TripsRepository.self)!
             return GetTripsAvailableUseCaseImp(repository)
         }
+        register(GetStopUseCase.self) { resolver in
+            let repository = resolver.resolve(StopsRepository.self)!
+            return GetStopUseCaseImp(repository)
+        }
     }
 }

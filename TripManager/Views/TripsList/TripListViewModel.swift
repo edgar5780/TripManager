@@ -12,20 +12,26 @@ import TripManagerDomain
 
 final class TripListViewModel: ObservableObject {
     @Published var dataSource: [TripListRowView.UIModel]
+    @Published var stopDetails: StopDetails?
     @Published var annotations: [MapView.Annotation]
     @Published var polylineCoordinates: [MapView.Coordinates]
     @Published var status: Status
+    @Published var mapStatus: MapView.Status
     private var trips: [Trip]
     private let getTripsAvailableUseCase: GetTripsAvailableUseCase
+    private let getStopUseCase: GetStopUseCase
     private var disposables = Set<AnyCancellable>()
 
-    init(_ getTripsAvailableUseCase: GetTripsAvailableUseCase) {
+    init(_ getTripsAvailableUseCase: GetTripsAvailableUseCase,
+         _ getStopUseCase: GetStopUseCase) {
         self.getTripsAvailableUseCase = getTripsAvailableUseCase
+        self.getStopUseCase = getStopUseCase
         dataSource = []
         trips = []
         annotations = []
         polylineCoordinates = []
         status = .loading
+        mapStatus = .needsLoad
     }
 
     func fetch() {
@@ -33,13 +39,13 @@ final class TripListViewModel: ObservableObject {
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { [weak self] completion in
                 guard let self = self else { return }
+                self.status = .loaded
                 switch completion {
                 case .failure:
                     self.trips = []
                     self.dataSource = []
-                    self.status = .loaded
                 case .finished:
-                    self.status = .loaded
+                    break
                 }
                 }, receiveValue: { [weak self] trips in
                     guard let self = self else { return }
@@ -56,6 +62,7 @@ final class TripListViewModel: ObservableObject {
     }
 
     func itemSelected(_ id: UUID) {
+        mapStatus = .needsLoad
         let indexUnwrapped = dataSource.firstIndex(where: { $0.id == id })
         guard let index = indexUnwrapped, index < trips.count else { return }
         let trip = trips[index]
@@ -64,7 +71,24 @@ final class TripListViewModel: ObservableObject {
     }
 
     func annotationSelected(_ id: Int?) {
-        print(id)
+        mapStatus = .loaded
+        guard let id = id else { return }
+        status = .loading
+        getStopUseCase.invoke(id)
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { [weak self] completion in
+                guard let self = self else { return }
+                self.status = .loaded
+                switch completion {
+                case .failure:
+                    self.stopDetails = nil
+                case .finished:
+                    break
+                }
+                }, receiveValue: { [weak self] stopDetails in
+                    guard let self = self else { return }
+                    self.stopDetails = stopDetails
+            }).store(in: &disposables)
     }
 
     private func getAnnotations(_ trip: Trip) {
