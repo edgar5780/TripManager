@@ -10,3 +10,12 @@
 "NoResults" = "No results";
 "Paid" = "Paid";
 "NotPaid" = "Not paid";
+"ContactForm" = "Contact Form";
+"Save" = "Save";
+"Cancel" = "Cancel";
+"Name" = "Name";
+"Surname" = "Surname";
+"Email" = "Email";
+"Phone" = "Phone";
+"Date" = "Date";
+"Details" = "Details";

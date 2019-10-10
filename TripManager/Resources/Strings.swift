@@ -12,7 +12,16 @@ enum Strings: String {
     case driverName = "DriverName"
     case noResults = "NoResults"
     case paid = "Paid"
-    case notPaid = "Not paid"
+    case notPaid = "NotPaid"
+    case contactForm = "ContactForm"
+    case save = "Save"
+    case cancel = "Cancel"
+    case name = "Name"
+    case surname = "Surname"
+    case email = "Email"
+    case phone = "Phone"
+    case date = "Date"
+    case details = "Details"
 
     func localize(_ args: CVarArg...) -> String {
         let localizedString = NSLocalizedString(self.rawValue, comment: "")

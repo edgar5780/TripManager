@@ -81,6 +81,7 @@
 		6DAE5F4D2347FFE700C6FFFA /* URLFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5F4C2347FFE700C6FFFA /* URLFactory.swift */; };
 		6DAE5F4F234802CB00C6FFFA /* URLComponents+TripManagerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE5F4E234802CB00C6FFFA /* URLComponents+TripManagerData.swift */; };
 		6DCADD58234F90A300CA06B5 /* ContactFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCADD57234F90A300CA06B5 /* ContactFormView.swift */; };
+		6DCADD5E234FAB6C00CA06B5 /* ContactFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCADD5D234FAB6C00CA06B5 /* ContactFormViewModel.swift */; };
 		6DEA8B22234937360041F4C1 /* PointResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA8B21234937360041F4C1 /* PointResponse.swift */; };
 		6DEA8B24234937450041F4C1 /* LocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA8B23234937450041F4C1 /* LocationResponse.swift */; };
 		6DEA8B26234937530041F4C1 /* StopResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA8B25234937530041F4C1 /* StopResponse.swift */; };
@@ -262,6 +263,7 @@
 		6DAE5F4C2347FFE700C6FFFA /* URLFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLFactory.swift; sourceTree = "<group>"; };
 		6DAE5F4E234802CB00C6FFFA /* URLComponents+TripManagerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+TripManagerData.swift"; sourceTree = "<group>"; };
 		6DCADD57234F90A300CA06B5 /* ContactFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormView.swift; sourceTree = "<group>"; };
+		6DCADD5D234FAB6C00CA06B5 /* ContactFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewModel.swift; sourceTree = "<group>"; };
 		6DEA8B21234937360041F4C1 /* PointResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointResponse.swift; sourceTree = "<group>"; };
 		6DEA8B23234937450041F4C1 /* LocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResponse.swift; sourceTree = "<group>"; };
 		6DEA8B25234937530041F4C1 /* StopResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopResponse.swift; sourceTree = "<group>"; };
@@ -731,6 +733,7 @@
 			isa = PBXGroup;
 			children = (
 				6DCADD57234F90A300CA06B5 /* ContactFormView.swift */,
+				6DCADD5D234FAB6C00CA06B5 /* ContactFormViewModel.swift */,
 			);
 			path = ContactForm;
 			sourceTree = "<group>";
@@ -1324,6 +1327,7 @@
 				6D115413234BB21500DF4228 /* Strings.swift in Sources */,
 				6D28E258234BD23F003B123E /* Color+TripManager.swift in Sources */,
 				6D1AFB05234A9E7900EF8131 /* TripListViewModel.swift in Sources */,
+				6DCADD5E234FAB6C00CA06B5 /* ContactFormViewModel.swift in Sources */,
 				6D11540A234BAF0F00DF4228 /* Date+TripManager.swift in Sources */,
 				6D28E25A234BE60E003B123E /* TripAnnotation.swift in Sources */,
 				6DEC8378234E622000ECF53E /* UIColor+TripManager.swift in Sources */,

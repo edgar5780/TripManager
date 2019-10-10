@@ -99,11 +99,11 @@ struct TripListView: View {
                         Strings.paid.localize() : Strings.notPaid.localize())
                         .font(.caption)
                         .foregroundColor(.white)
-                        .padding(EdgeInsets(top: 3, leading: 3, bottom: 3, trailing: 3))
+                        .padding(.all, 3)
                 }.background(viewModel.stopDetails?.paid ?? false ? Color.green : Color.red)
                     .cornerRadius(5)
             }
-        }.padding(EdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12))
+        }.padding(.all, 12)
     }
 
     var contactFormButton: some View {
