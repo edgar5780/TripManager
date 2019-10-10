@@ -11,7 +11,7 @@ import Combine
 @testable import TripManagerDomain
 @testable import TripManager
 
-class TripListViewModelTest: XCTestCase {
+final class TripListViewModelTest: XCTestCase {
     var viewModel: TripListViewModel?
     var disposables: Set<AnyCancellable>?
 

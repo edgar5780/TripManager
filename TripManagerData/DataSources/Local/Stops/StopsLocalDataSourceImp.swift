@@ -33,7 +33,7 @@ final class StopsLocalDataSourceImp: StopsLocalDataSource {
 }
 
 extension StopsLocalDataSourceImp {
-    private class StopDetailsCache {
+    private final class StopDetailsCache {
         var stop: StopDetails
         init(_ stop: StopDetails) {
             self.stop = stop

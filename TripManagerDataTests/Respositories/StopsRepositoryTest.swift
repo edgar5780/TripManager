@@ -11,7 +11,7 @@ import Combine
 import TripManagerDomain
 @testable import TripManagerData
 
-class StopsRepositoryTest: XCTestCase {
+final class StopsRepositoryTest: XCTestCase {
     var repository: StopsRepository?
     var disposables: Set<AnyCancellable>?
 

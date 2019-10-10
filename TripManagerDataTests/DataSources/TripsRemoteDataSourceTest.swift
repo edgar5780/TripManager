@@ -11,7 +11,7 @@ import Combine
 import TripManagerDomain
 @testable import TripManagerData
 
-class TripsRemoteDataSourceTest: XCTestCase {
+final class TripsRemoteDataSourceTest: XCTestCase {
     var tripsRemoteDataSource: TripsRemoteDataSource?
     var disposables: Set<AnyCancellable>?
 

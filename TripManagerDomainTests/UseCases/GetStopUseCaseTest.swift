@@ -10,7 +10,7 @@ import XCTest
 import Combine
 @testable import TripManagerDomain
 
-class GetStopUseCaseTest: XCTestCase {
+final class GetStopUseCaseTest: XCTestCase {
     var useCase: GetStopUseCase?
     var disposables: Set<AnyCancellable>?
 
