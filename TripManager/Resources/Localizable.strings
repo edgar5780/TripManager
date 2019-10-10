@@ -8,3 +8,5 @@
 
 "DriverName" = "Driver name: %@";
 "NoResults" = "No results";
+"Paid" = "Paid";
+"NotPaid" = "Not paid";

@@ -51,13 +51,12 @@ class TripListViewModelTest: XCTestCase {
             if count == 0 {
                 XCTAssertNil(stop)
             } else if count == 1 {
-                XCTAssertEqual(stop?.stopTime, Date(timeIntervalSince1970: 1570558839))
+                XCTAssertEqual(stop?.stopTime,
+                               Date(timeIntervalSince1970: 1570558839).getFormattedDate())
                 XCTAssertEqual(stop?.paid, true)
                 XCTAssertEqual(stop?.address, "Ramblas, Barcelona")
                 XCTAssertEqual(stop?.userName, "Manuel Gomez")
-                XCTAssertEqual(stop?.point.latitude, 41.37653)
-                XCTAssertEqual(stop?.point.longitude, 2.17924)
-                XCTAssertEqual(stop?.price, 1.5)
+                XCTAssertEqual(stop?.price, "1.5")
                 expectation.fulfill()
             }
             count += 1

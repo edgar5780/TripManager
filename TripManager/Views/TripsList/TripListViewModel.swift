@@ -12,7 +12,7 @@ import TripManagerDomain
 
 final class TripListViewModel: ObservableObject {
     @Published var dataSource: [TripListRowView.UIModel]
-    @Published var stopDetails: StopDetails?
+    @Published var stopDetails: TripListView.StopDetailsUIModel?
     @Published var annotations: [MapView.Annotation]
     @Published var polylineCoordinates: [MapView.Coordinate]
     @Published var status: Status
@@ -92,7 +92,11 @@ final class TripListViewModel: ObservableObject {
                 }
                 }, receiveValue: { [weak self] stopDetails in
                     guard let self = self else { return }
-                    self.stopDetails = stopDetails
+                    self.stopDetails = .init(address: stopDetails.address,
+                                             stopTime: stopDetails.stopTime.getFormattedDate(),
+                                             userName: stopDetails.userName,
+                                             price: String(stopDetails.price),
+                                             paid: stopDetails.paid)
             }).store(in: &disposables)
     }
 

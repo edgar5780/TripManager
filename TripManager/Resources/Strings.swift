@@ -11,6 +11,8 @@ import Foundation
 enum Strings: String {
     case driverName = "DriverName"
     case noResults = "NoResults"
+    case paid = "Paid"
+    case notPaid = "Not paid"
 
     func localize(_ args: CVarArg...) -> String {
         let localizedString = NSLocalizedString(self.rawValue, comment: "")

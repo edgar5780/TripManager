@@ -77,7 +77,7 @@ struct TripListView: View {
             Text(viewModel.stopDetails?.address ?? "")
                 .foregroundColor(.customOrange)
                 .bold()
-            Text(viewModel.stopDetails?.stopTime.getFormattedDate() ?? "")
+            Text(viewModel.stopDetails?.stopTime ?? "")
                 .font(.caption)
                 .foregroundColor(.gray)
             HStack {
@@ -85,8 +85,12 @@ struct TripListView: View {
                     .font(.caption)
                     .foregroundColor(.gray)
                 Spacer()
+                Text(viewModel.stopDetails?.price ?? "")
+                    .font(.caption)
+                    .foregroundColor(.gray)
                 Group {
-                    Text(viewModel.stopDetails?.paid ?? false ? "Paid" : "Not paid")
+                    Text(viewModel.stopDetails?.paid ?? false ?
+                        Strings.paid.localize() : Strings.notPaid.localize())
                         .font(.caption)
                         .foregroundColor(.white)
                         .padding(EdgeInsets(top: 3, leading: 3, bottom: 3, trailing: 3))
@@ -94,5 +98,15 @@ struct TripListView: View {
                     .cornerRadius(5)
             }
         }.padding(EdgeInsets(top: 12, leading: 12, bottom: 12, trailing: 12))
+    }
+}
+
+extension TripListView {
+    struct StopDetailsUIModel {
+        var address: String
+        var stopTime: String
+        var userName: String
+        var price: String
+        var paid: Bool
     }
 }
