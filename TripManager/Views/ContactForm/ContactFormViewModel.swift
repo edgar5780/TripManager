@@ -11,7 +11,7 @@ import Combine
 
 final class ContactFormViewModel: ObservableObject {
     let objectWillChange = PassthroughSubject<ContactFormViewModel, Never>()
-    var saveDisabled: Bool
+    @Published var saveDisabled: Bool
     var name: String {
         didSet {
             validateForm()
