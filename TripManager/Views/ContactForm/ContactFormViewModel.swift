@@ -22,21 +22,21 @@ final class ContactFormViewModel: ObservableObject {
         }
     }
     var surname: String {
-           didSet {
-               validateForm()
-           }
-       }
+        didSet {
+            validateForm()
+        }
+    }
     var email: String {
-           didSet {
-               validateForm()
-           }
-       }
+        didSet {
+            validateForm()
+        }
+    }
     var phone: String
     var details: String {
-           didSet {
-               validateForm()
-           }
-       }
+        didSet {
+            validateForm()
+        }
+    }
     var date: Date {
         willSet {
             self.date = newValue
