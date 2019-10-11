@@ -13,8 +13,8 @@ struct ContactFormView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @ObservedObject private var viewModel: ContactFormViewModel
 
-    init() {
-        viewModel = ContactFormViewModel()
+    init(_ viewModel: ContactFormViewModel) {
+        self.viewModel = viewModel
     }
 
     var body: some View {
@@ -47,7 +47,8 @@ struct ContactFormView: View {
 
     var saveButton: some View {
         Button(action: {
-            print("SAVE")
+            self.viewModel.save()
+            self.presentationMode.wrappedValue.dismiss()
         }, label: {
             Text(Strings.save.localize())
                 .bold()

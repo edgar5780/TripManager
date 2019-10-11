@@ -28,6 +28,10 @@ public extension Container {
             let localDataSource = resolver.resolve(StopsLocalDataSource.self)!
             return StopsRepositoryImp(remoteDataSource, localDataSource)
         }
+        register(ReportsRepository.self) { resolver in
+            let localDataSource = resolver.resolve(ReportsLocalDataSource.self)!
+            return ReportsRepositoryImp(localDataSource)
+        }
     }
 
     private func registerRemoteDataSource() {
@@ -44,6 +48,9 @@ public extension Container {
     private func registerLocalDataSource() {
         register(StopsLocalDataSource.self) { _ in
             return StopsLocalDataSourceImp()
+        }
+        register(ReportsLocalDataSource.self) { _ in
+            return ReportsLocalDataSourceImp()
         }
     }
 

@@ -8,8 +8,4 @@
 
 import Foundation
 
-protocol BaseResponseModel: Decodable {
-    associatedtype DomainModel
-
-    func toDomain() -> DomainModel
-}
+protocol BaseResponseModel: BaseDataModel, Codable {}

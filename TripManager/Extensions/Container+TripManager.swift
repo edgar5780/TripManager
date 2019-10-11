@@ -22,6 +22,10 @@ extension Container {
             let viewModel = resolver.resolve(TripListViewModel.self)!
             return TripListView(viewModel)
         }
+        register(ContactFormView.self) { resolver in
+            let viewModel = resolver.resolve(ContactFormViewModel.self)!
+            return ContactFormView(viewModel)
+        }
     }
 
     private func registerViewModels() {
@@ -29,6 +33,11 @@ extension Container {
             let getTripsAvailableUseCase = resolver.resolve(GetTripsAvailableUseCase.self)!
             let getStopUseCase = resolver.resolve(GetStopUseCase.self)!
             return TripListViewModel(getTripsAvailableUseCase, getStopUseCase)
+        }
+        register(ContactFormViewModel.self) { resolver in
+            let saveReportUseCase = resolver.resolve(SaveReportUseCase.self)!
+            let getReportsNumberUseCase = resolver.resolve(GetReportsNumberUseCase.self)!
+            return ContactFormViewModel(saveReportUseCase, getReportsNumberUseCase)
         }
     }
 }

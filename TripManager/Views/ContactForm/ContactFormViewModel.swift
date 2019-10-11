@@ -8,8 +8,12 @@
 
 import Foundation
 import Combine
+import TripManagerDomain
 
 final class ContactFormViewModel: ObservableObject {
+    private let saveReportUseCase: SaveReportUseCase
+    private let getReportsNumberUseCase: GetReportsNumberUseCase
+    private var disposables = Set<AnyCancellable>()
     let objectWillChange = PassthroughSubject<ContactFormViewModel, Never>()
     @Published var saveDisabled: Bool
     var name: String {
@@ -40,7 +44,10 @@ final class ContactFormViewModel: ObservableObject {
         }
     }
 
-    init() {
+    init(_ saveReportUseCase: SaveReportUseCase,
+         _ getReportsNumberUseCase: GetReportsNumberUseCase) {
+        self.saveReportUseCase = saveReportUseCase
+        self.getReportsNumberUseCase = getReportsNumberUseCase
         saveDisabled = true
         name = ""
         surname = ""
@@ -48,6 +55,23 @@ final class ContactFormViewModel: ObservableObject {
         phone = ""
         details = ""
         date = Date()
+    }
+
+    func save() {
+        let report = Report(name: name,
+                            surname: surname,
+                            email: email,
+                            phone: phone,
+                            details: details,
+                            date: date)
+        saveReportUseCase.invoke(report)
+        updateBadge()
+    }
+
+    private func updateBadge() {
+        getReportsNumberUseCase.invoke().sink(receiveCompletion: { _ in }, receiveValue: { number in
+            BadgeUtils().updateBadge(number)
+        }).store(in: &disposables)
     }
 
     private func validateForm() {

@@ -15,4 +15,5 @@ public enum TripManagerError: Error {
     case api(description: String)
     case fileNotFound
     case elementNotFound
+    case database
 }

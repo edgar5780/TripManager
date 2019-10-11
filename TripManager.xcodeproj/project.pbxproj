@@ -98,6 +98,20 @@
 		6DF6F6F7234E89A900545708 /* StopsLocalDataSourceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6F6F6234E89A900545708 /* StopsLocalDataSourceImp.swift */; };
 		6DF6F6F9234E92DF00545708 /* StopsLocalDataSourceMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF6F6F8234E92DF00545708 /* StopsLocalDataSourceMockup.swift */; };
 		6DFD09DF234FE8E2001CEAA0 /* ContactFormViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD09DE234FE8E2001CEAA0 /* ContactFormViewModelTest.swift */; };
+		6DFD09E1234FEBAA001CEAA0 /* Object+TripManagerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD09E0234FEBAA001CEAA0 /* Object+TripManagerData.swift */; };
+		6DFD09E6234FEDF1001CEAA0 /* ReportRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD09E5234FEDF1001CEAA0 /* ReportRealmModel.swift */; };
+		6DFD09E8234FEEBB001CEAA0 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD09E7234FEEBB001CEAA0 /* Report.swift */; };
+		6DFD09EA234FF0CD001CEAA0 /* BaseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD09E9234FF0CD001CEAA0 /* BaseDataModel.swift */; };
+		6DFD09ED234FF1CA001CEAA0 /* ReportsLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD09EC234FF1CA001CEAA0 /* ReportsLocalDataSource.swift */; };
+		6DFD09EF234FF20D001CEAA0 /* ReportsLocalDataSourceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD09EE234FF20D001CEAA0 /* ReportsLocalDataSourceImp.swift */; };
+		6DFD09F4234FF2C8001CEAA0 /* ReportsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD09F3234FF2C8001CEAA0 /* ReportsRepository.swift */; };
+		6DFD09F8234FF38E001CEAA0 /* ReportsRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD09F7234FF38E001CEAA0 /* ReportsRepositoryImp.swift */; };
+		6DFD09FB234FF50D001CEAA0 /* SaveReportUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD09FA234FF50D001CEAA0 /* SaveReportUseCase.swift */; };
+		6DFD09FD234FF567001CEAA0 /* SaveReportUseCaseImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD09FC234FF567001CEAA0 /* SaveReportUseCaseImp.swift */; };
+		6DFD09FF234FF779001CEAA0 /* ContactFormCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD09FE234FF779001CEAA0 /* ContactFormCoordinator.swift */; };
+		6DFD0A01234FFAC1001CEAA0 /* BadgeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD0A00234FFAC1001CEAA0 /* BadgeUtils.swift */; };
+		6DFD0A042350034C001CEAA0 /* GetReportsNumberUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD0A032350034C001CEAA0 /* GetReportsNumberUseCase.swift */; };
+		6DFD0A0623500384001CEAA0 /* GetReportsNumberUseCaseImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD0A0523500384001CEAA0 /* GetReportsNumberUseCaseImp.swift */; };
 		7949DE091848D8CB6D39E363 /* Pods_TripManagerDataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C2979ABE7D2D8E5F47E5C4 /* Pods_TripManagerDataTests.framework */; };
 		832E78E8D206FCA7FB5AB474 /* Pods_TripManagerData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7AE84E1E836F84FFB1DC81D /* Pods_TripManagerData.framework */; };
 		E22B8A26652B322F7695A9F7 /* Pods_TripManagerDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535EFDBEFD6A3951D6DF4531 /* Pods_TripManagerDomain.framework */; };
@@ -282,6 +296,20 @@
 		6DF6F6F6234E89A900545708 /* StopsLocalDataSourceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsLocalDataSourceImp.swift; sourceTree = "<group>"; };
 		6DF6F6F8234E92DF00545708 /* StopsLocalDataSourceMockup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsLocalDataSourceMockup.swift; sourceTree = "<group>"; };
 		6DFD09DE234FE8E2001CEAA0 /* ContactFormViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormViewModelTest.swift; sourceTree = "<group>"; };
+		6DFD09E0234FEBAA001CEAA0 /* Object+TripManagerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Object+TripManagerData.swift"; sourceTree = "<group>"; };
+		6DFD09E5234FEDF1001CEAA0 /* ReportRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportRealmModel.swift; sourceTree = "<group>"; };
+		6DFD09E7234FEEBB001CEAA0 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		6DFD09E9234FF0CD001CEAA0 /* BaseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataModel.swift; sourceTree = "<group>"; };
+		6DFD09EC234FF1CA001CEAA0 /* ReportsLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsLocalDataSource.swift; sourceTree = "<group>"; };
+		6DFD09EE234FF20D001CEAA0 /* ReportsLocalDataSourceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsLocalDataSourceImp.swift; sourceTree = "<group>"; };
+		6DFD09F3234FF2C8001CEAA0 /* ReportsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsRepository.swift; sourceTree = "<group>"; };
+		6DFD09F7234FF38E001CEAA0 /* ReportsRepositoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsRepositoryImp.swift; sourceTree = "<group>"; };
+		6DFD09FA234FF50D001CEAA0 /* SaveReportUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveReportUseCase.swift; sourceTree = "<group>"; };
+		6DFD09FC234FF567001CEAA0 /* SaveReportUseCaseImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveReportUseCaseImp.swift; sourceTree = "<group>"; };
+		6DFD09FE234FF779001CEAA0 /* ContactFormCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFormCoordinator.swift; sourceTree = "<group>"; };
+		6DFD0A00234FFAC1001CEAA0 /* BadgeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeUtils.swift; sourceTree = "<group>"; };
+		6DFD0A032350034C001CEAA0 /* GetReportsNumberUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReportsNumberUseCase.swift; sourceTree = "<group>"; };
+		6DFD0A0523500384001CEAA0 /* GetReportsNumberUseCaseImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReportsNumberUseCaseImp.swift; sourceTree = "<group>"; };
 		74789944E36FE299C50DC00D /* Pods-TripManagerDomain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripManagerDomain.release.xcconfig"; path = "Target Support Files/Pods-TripManagerDomain/Pods-TripManagerDomain.release.xcconfig"; sourceTree = "<group>"; };
 		7A1740F6AAF0FADE6AF65AB9 /* Pods-TripManager-TripManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripManager-TripManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-TripManager-TripManagerUITests/Pods-TripManager-TripManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7DB2B5E4C8A693DE9EA3BA10 /* Pods-TripManagerDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripManagerDataTests.release.xcconfig"; path = "Target Support Files/Pods-TripManagerDataTests/Pods-TripManagerDataTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -367,6 +395,7 @@
 			children = (
 				6D0C20342348E44B00D8D20B /* BaseRemoteDataSource.swift */,
 				6D0C203D2348E8FF00D8D20B /* BaseResponseModel.swift */,
+				6DFD09E9234FF0CD001CEAA0 /* BaseDataModel.swift */,
 			);
 			path = Bases;
 			sourceTree = "<group>";
@@ -510,6 +539,7 @@
 			isa = PBXGroup;
 			children = (
 				6D28E25D234BF528003B123E /* PolylineDecoder.swift */,
+				6DFD0A00234FFAC1001CEAA0 /* BadgeUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -517,6 +547,8 @@
 		6D69352D234A7FCB0090D021 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				6DFD0A022350032C001CEAA0 /* GetReportsNumberUseCase */,
+				6DFD09F9234FF4E3001CEAA0 /* SaveReportUseCase */,
 				6D0CD35E234D176700573048 /* GetStopUseCase */,
 				6D724559234CEA90006751D7 /* GetTripsAvailableUseCase */,
 			);
@@ -526,6 +558,7 @@
 		6D69352E234A80530090D021 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				6DFD09F2234FF2A8001CEAA0 /* Reports */,
 				6D0CD34F234D0C2C00573048 /* Stops */,
 				6D693530234A80AD0090D021 /* Trips */,
 			);
@@ -691,6 +724,7 @@
 				6D0C20452348ED1F00D8D20B /* Location.swift */,
 				6D0C20472348ED6D00D8D20B /* Stop.swift */,
 				6D0CD346234D05BB00573048 /* StopDetails.swift */,
+				6DFD09E7234FEEBB001CEAA0 /* Report.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -710,6 +744,7 @@
 			children = (
 				6DAE5F4E234802CB00C6FFFA /* URLComponents+TripManagerData.swift */,
 				6D1AFAFC234A9A5300EF8131 /* Container+TripManagerData.swift */,
+				6DFD09E0234FEBAA001CEAA0 /* Object+TripManagerData.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -717,6 +752,7 @@
 		6DAE5F432347FD7800C6FFFA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6DFD09E4234FED88001CEAA0 /* Database */,
 				6D0C203A2348E8AE00D8D20B /* Responses */,
 				6DAE5F452347FD8400C6FFFA /* API */,
 			);
@@ -737,6 +773,7 @@
 			children = (
 				6DCADD57234F90A300CA06B5 /* ContactFormView.swift */,
 				6DCADD5D234FAB6C00CA06B5 /* ContactFormViewModel.swift */,
+				6DFD09FE234FF779001CEAA0 /* ContactFormCoordinator.swift */,
 			);
 			path = ContactForm;
 			sourceTree = "<group>";
@@ -756,6 +793,7 @@
 			children = (
 				6DEA8B2E23493B290041F4C1 /* TripsRepositoryImp.swift */,
 				6D0CD352234D0CB000573048 /* StopsRepositoryImp.swift */,
+				6DFD09F7234FF38E001CEAA0 /* ReportsRepositoryImp.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -807,6 +845,7 @@
 		6DF6F6F1234E893000545708 /* Local */ = {
 			isa = PBXGroup;
 			children = (
+				6DFD09EB234FF17A001CEAA0 /* Reports */,
 				6DF6F6F2234E894600545708 /* Stops */,
 			);
 			path = Local;
@@ -820,6 +859,49 @@
 				6DF6F6F8234E92DF00545708 /* StopsLocalDataSourceMockup.swift */,
 			);
 			path = Stops;
+			sourceTree = "<group>";
+		};
+		6DFD09E4234FED88001CEAA0 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				6DFD09E5234FEDF1001CEAA0 /* ReportRealmModel.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		6DFD09EB234FF17A001CEAA0 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				6DFD09EC234FF1CA001CEAA0 /* ReportsLocalDataSource.swift */,
+				6DFD09EE234FF20D001CEAA0 /* ReportsLocalDataSourceImp.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		6DFD09F2234FF2A8001CEAA0 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				6DFD09F3234FF2C8001CEAA0 /* ReportsRepository.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		6DFD09F9234FF4E3001CEAA0 /* SaveReportUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				6DFD09FA234FF50D001CEAA0 /* SaveReportUseCase.swift */,
+				6DFD09FC234FF567001CEAA0 /* SaveReportUseCaseImp.swift */,
+			);
+			path = SaveReportUseCase;
+			sourceTree = "<group>";
+		};
+		6DFD0A022350032C001CEAA0 /* GetReportsNumberUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				6DFD0A032350034C001CEAA0 /* GetReportsNumberUseCase.swift */,
+				6DFD0A0523500384001CEAA0 /* GetReportsNumberUseCaseImp.swift */,
+			);
+			path = GetReportsNumberUseCase;
 			sourceTree = "<group>";
 		};
 		B3411E7E482D1C5A43B2818D /* Pods */ = {
@@ -1330,6 +1412,7 @@
 				6DAE5EBB2347E79400C6FFFA /* AppDelegate.swift in Sources */,
 				6D115413234BB21500DF4228 /* Strings.swift in Sources */,
 				6D28E258234BD23F003B123E /* Color+TripManager.swift in Sources */,
+				6DFD09FF234FF779001CEAA0 /* ContactFormCoordinator.swift in Sources */,
 				6D1AFB05234A9E7900EF8131 /* TripListViewModel.swift in Sources */,
 				6DCADD5E234FAB6C00CA06B5 /* ContactFormViewModel.swift in Sources */,
 				6D11540A234BAF0F00DF4228 /* Date+TripManager.swift in Sources */,
@@ -1344,6 +1427,7 @@
 				6D0394BA234D3B8D0058CE43 /* ActivityIndicatorView.swift in Sources */,
 				6D1AFB0D234AA42A00EF8131 /* TripListRowView.swift in Sources */,
 				6D1AFB03234A9E0200EF8131 /* Container+TripManager.swift in Sources */,
+				6DFD0A01234FFAC1001CEAA0 /* BadgeUtils.swift in Sources */,
 				6D1AFB08234AA0D700EF8131 /* DependencyInjection.swift in Sources */,
 				6DAE5F312347EA1D00C6FFFA /* TripListView.swift in Sources */,
 			);
@@ -1357,19 +1441,25 @@
 				6D0CD360234D177E00573048 /* GetStopUseCase.swift in Sources */,
 				6D0C20442348EC4C00D8D20B /* Point.swift in Sources */,
 				6D0C20402348E93A00D8D20B /* Trip.swift in Sources */,
+				6DFD0A0623500384001CEAA0 /* GetReportsNumberUseCaseImp.swift in Sources */,
 				6D0CD366234D195B00573048 /* StopsRepositoryMockup.swift in Sources */,
 				6D0CD347234D05BB00573048 /* StopDetails.swift in Sources */,
 				6D0C20462348ED1F00D8D20B /* Location.swift in Sources */,
 				6D1AFB00234A9A9600EF8131 /* Container+TripManagerDomain.swift in Sources */,
 				6D0CD362234D17E300573048 /* GetStopUseCaseImp.swift in Sources */,
+				6DFD09E8234FEEBB001CEAA0 /* Report.swift in Sources */,
 				6D0C20422348EB6B00D8D20B /* TripStatus.swift in Sources */,
 				6DAE5F3C2347F15500C6FFFA /* TripManagerError.swift in Sources */,
 				6D693534234A82560090D021 /* GetTripsAvailableUseCaseImp.swift in Sources */,
+				6DFD09FD234FF567001CEAA0 /* SaveReportUseCaseImp.swift in Sources */,
+				6DFD09F4234FF2C8001CEAA0 /* ReportsRepository.swift in Sources */,
 				6D0CD364234D17F800573048 /* GetStopUseCaseMockup.swift in Sources */,
 				6D0C20482348ED6D00D8D20B /* Stop.swift in Sources */,
 				6D693532234A80CC0090D021 /* TripsRepositoryMockup.swift in Sources */,
 				6D0CD351234D0C5200573048 /* StopsRepository.swift in Sources */,
+				6DFD09FB234FF50D001CEAA0 /* SaveReportUseCase.swift in Sources */,
 				6D72455B234CEAA7006751D7 /* GetTripsAvailableUseCaseMockup.swift in Sources */,
+				6DFD0A042350034C001CEAA0 /* GetReportsNumberUseCase.swift in Sources */,
 				6D693536234A83EF0090D021 /* GetTripsAvailableUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1382,9 +1472,11 @@
 				6DF6F6F9234E92DF00545708 /* StopsLocalDataSourceMockup.swift in Sources */,
 				6D0CD353234D0CB000573048 /* StopsRepositoryImp.swift in Sources */,
 				6D0C20392348E6D600D8D20B /* TripsRemoteDataSourceImp.swift in Sources */,
+				6DFD09F8234FF38E001CEAA0 /* ReportsRepositoryImp.swift in Sources */,
 				6D0CD34A234D085B00573048 /* StopsRemoteDataSource.swift in Sources */,
 				6DEA8B24234937450041F4C1 /* LocationResponse.swift in Sources */,
 				6DEA8B3D234953E70041F4C1 /* TripsRemoteDataSourceMockup.swift in Sources */,
+				6DFD09E1234FEBAA001CEAA0 /* Object+TripManagerData.swift in Sources */,
 				6DAE5F3E2347F35800C6FFFA /* APIClientImp.swift in Sources */,
 				6D0CD34C234D08C300573048 /* StopsRemoteDataSourceImp.swift in Sources */,
 				6DAE5F412347F42600C6FFFA /* Decoder.swift in Sources */,
@@ -1397,11 +1489,15 @@
 				6DEA8B29234939E80041F4C1 /* TripsRemoteDataSource.swift in Sources */,
 				6D0CD345234D05A000573048 /* StopDetailsResponse.swift in Sources */,
 				6DEA8B3223493CCB0041F4C1 /* TripsAPIClientMockup.swift in Sources */,
+				6DFD09EA234FF0CD001CEAA0 /* BaseDataModel.swift in Sources */,
 				6D0CD357234D0E6D00573048 /* StopsAPIClientMockup.swift in Sources */,
+				6DFD09E6234FEDF1001CEAA0 /* ReportRealmModel.swift in Sources */,
 				6DAE5F472347FD9E00C6FFFA /* APIEndpoint.swift in Sources */,
 				6DAE5F4F234802CB00C6FFFA /* URLComponents+TripManagerData.swift in Sources */,
 				6D0CD34E234D08D000573048 /* StopsRemoteDataSourceMockup.swift in Sources */,
 				6DAE5F4B2347FEC700C6FFFA /* APIMethod.swift in Sources */,
+				6DFD09EF234FF20D001CEAA0 /* ReportsLocalDataSourceImp.swift in Sources */,
+				6DFD09ED234FF1CA001CEAA0 /* ReportsLocalDataSource.swift in Sources */,
 				6D0C20352348E44B00D8D20B /* BaseRemoteDataSource.swift in Sources */,
 				6D0C203C2348E8C000D8D20B /* TripResponse.swift in Sources */,
 				6DEA8B2F23493B290041F4C1 /* TripsRepositoryImp.swift in Sources */,

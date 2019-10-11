@@ -19,5 +19,13 @@ public extension Container {
             let repository = resolver.resolve(StopsRepository.self)!
             return GetStopUseCaseImp(repository)
         }
+        register(SaveReportUseCase.self) { resolver in
+            let repository = resolver.resolve(ReportsRepository.self)!
+            return SaveReportUseCaseImp(repository)
+        }
+        register(GetReportsNumberUseCase.self) { resolver in
+            let repository = resolver.resolve(ReportsRepository.self)!
+            return GetReportsNumberUseCaseImp(repository)
+        }
     }
 }

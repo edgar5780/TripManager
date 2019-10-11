@@ -119,7 +119,7 @@ struct TripListView: View {
                 .padding()
                 .shadow(color: Color.black.opacity(0.3), radius: 3, x: 3, y: 3)
                 .sheet(isPresented: $showContactForm,
-                       content: { ContactFormView() })
+                       content: { self.viewModel.contactForm() })
         }
     }
 }

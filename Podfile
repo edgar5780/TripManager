@@ -14,6 +14,7 @@ end
 target 'TripManagerData' do
   use_frameworks!
   globalPods
+  pod 'RealmSwift'
   target 'TripManagerDataTests' do
     inherit! :search_paths
   end

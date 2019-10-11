@@ -8,9 +8,13 @@
 
 import Foundation
 import Combine
+import SwiftUI
 import TripManagerDomain
 
 final class TripListViewModel: ObservableObject {
+    private let getTripsAvailableUseCase: GetTripsAvailableUseCase
+    private let getStopUseCase: GetStopUseCase
+    private var disposables = Set<AnyCancellable>()
     @Published var dataSource: [TripListRowView.UIModel]
     @Published var stopDetails: TripListView.StopDetailsUIModel?
     @Published var annotations: [MapView.Annotation]
@@ -18,9 +22,6 @@ final class TripListViewModel: ObservableObject {
     @Published var status: Status
     @Published var mapStatus: MapView.Status
     private var trips: [Trip]
-    private let getTripsAvailableUseCase: GetTripsAvailableUseCase
-    private let getStopUseCase: GetStopUseCase
-    private var disposables = Set<AnyCancellable>()
 
     init(_ getTripsAvailableUseCase: GetTripsAvailableUseCase,
          _ getStopUseCase: GetStopUseCase) {
@@ -98,6 +99,10 @@ final class TripListViewModel: ObservableObject {
                                              price: String(stopDetails.price),
                                              paid: stopDetails.paid)
             }).store(in: &disposables)
+    }
+
+    func contactForm() -> some View {
+        ContactFormCoordinator().modal()
     }
 
     private func getAnnotations(_ trip: Trip) {
