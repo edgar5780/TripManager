@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import UIKit
 import Combine
 @testable import TripManagerDomain
 @testable import TripManager
@@ -16,7 +17,9 @@ final class ContactFormViewModelTest: XCTestCase {
     var disposables: Set<AnyCancellable>?
 
     override func setUp() {
-        viewModel = ContactFormViewModel()
+        let saveReportUseCase = SaveReportUseCaseMockup()
+        let getReportsNumberUseCase = GetReportsNumberUseCaseMockup()
+        viewModel = ContactFormViewModel(saveReportUseCase, getReportsNumberUseCase)
         disposables = Set<AnyCancellable>()
     }
 

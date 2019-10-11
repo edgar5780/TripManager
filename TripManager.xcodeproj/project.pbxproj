@@ -112,6 +112,12 @@
 		6DFD0A01234FFAC1001CEAA0 /* BadgeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD0A00234FFAC1001CEAA0 /* BadgeUtils.swift */; };
 		6DFD0A042350034C001CEAA0 /* GetReportsNumberUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD0A032350034C001CEAA0 /* GetReportsNumberUseCase.swift */; };
 		6DFD0A0623500384001CEAA0 /* GetReportsNumberUseCaseImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD0A0523500384001CEAA0 /* GetReportsNumberUseCaseImp.swift */; };
+		6DFD0A082350066C001CEAA0 /* SaveReportUseCaseMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD0A072350066C001CEAA0 /* SaveReportUseCaseMockup.swift */; };
+		6DFD0A0A235006E0001CEAA0 /* GetReportsNumberUseCaseMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD0A09235006E0001CEAA0 /* GetReportsNumberUseCaseMockup.swift */; };
+		6DFD0A0E2350096A001CEAA0 /* ReportsRepositoryMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD0A0D2350096A001CEAA0 /* ReportsRepositoryMockup.swift */; };
+		6DFD0A1023500A31001CEAA0 /* GetReportsNumberUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD0A0F23500A31001CEAA0 /* GetReportsNumberUseCaseTest.swift */; };
+		6DFD0A1223500C57001CEAA0 /* ReportsLocalDataSourceMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD0A1123500C57001CEAA0 /* ReportsLocalDataSourceMockup.swift */; };
+		6DFD0A1423500D19001CEAA0 /* ReportsRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD0A1323500D19001CEAA0 /* ReportsRepositoryTest.swift */; };
 		7949DE091848D8CB6D39E363 /* Pods_TripManagerDataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C2979ABE7D2D8E5F47E5C4 /* Pods_TripManagerDataTests.framework */; };
 		832E78E8D206FCA7FB5AB474 /* Pods_TripManagerData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7AE84E1E836F84FFB1DC81D /* Pods_TripManagerData.framework */; };
 		E22B8A26652B322F7695A9F7 /* Pods_TripManagerDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535EFDBEFD6A3951D6DF4531 /* Pods_TripManagerDomain.framework */; };
@@ -310,6 +316,12 @@
 		6DFD0A00234FFAC1001CEAA0 /* BadgeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeUtils.swift; sourceTree = "<group>"; };
 		6DFD0A032350034C001CEAA0 /* GetReportsNumberUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReportsNumberUseCase.swift; sourceTree = "<group>"; };
 		6DFD0A0523500384001CEAA0 /* GetReportsNumberUseCaseImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReportsNumberUseCaseImp.swift; sourceTree = "<group>"; };
+		6DFD0A072350066C001CEAA0 /* SaveReportUseCaseMockup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveReportUseCaseMockup.swift; sourceTree = "<group>"; };
+		6DFD0A09235006E0001CEAA0 /* GetReportsNumberUseCaseMockup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReportsNumberUseCaseMockup.swift; sourceTree = "<group>"; };
+		6DFD0A0D2350096A001CEAA0 /* ReportsRepositoryMockup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsRepositoryMockup.swift; sourceTree = "<group>"; };
+		6DFD0A0F23500A31001CEAA0 /* GetReportsNumberUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReportsNumberUseCaseTest.swift; sourceTree = "<group>"; };
+		6DFD0A1123500C57001CEAA0 /* ReportsLocalDataSourceMockup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsLocalDataSourceMockup.swift; sourceTree = "<group>"; };
+		6DFD0A1323500D19001CEAA0 /* ReportsRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsRepositoryTest.swift; sourceTree = "<group>"; };
 		74789944E36FE299C50DC00D /* Pods-TripManagerDomain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripManagerDomain.release.xcconfig"; path = "Target Support Files/Pods-TripManagerDomain/Pods-TripManagerDomain.release.xcconfig"; sourceTree = "<group>"; };
 		7A1740F6AAF0FADE6AF65AB9 /* Pods-TripManager-TripManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripManager-TripManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-TripManager-TripManagerUITests/Pods-TripManager-TripManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7DB2B5E4C8A693DE9EA3BA10 /* Pods-TripManagerDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripManagerDataTests.release.xcconfig"; path = "Target Support Files/Pods-TripManagerDataTests/Pods-TripManagerDataTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -474,6 +486,7 @@
 			children = (
 				6D1AFAF4234A86E600EF8131 /* GetTripsAvailableUseCaseTest.swift */,
 				6D0CD367234D1A1E00573048 /* GetStopUseCaseTest.swift */,
+				6DFD0A0F23500A31001CEAA0 /* GetReportsNumberUseCaseTest.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -838,6 +851,7 @@
 			children = (
 				6DEA8B41234956EB0041F4C1 /* TripsRepositoryTest.swift */,
 				6D0CD35C234D0F0A00573048 /* StopsRepositoryTest.swift */,
+				6DFD0A1323500D19001CEAA0 /* ReportsRepositoryTest.swift */,
 			);
 			path = Respositories;
 			sourceTree = "<group>";
@@ -874,6 +888,7 @@
 			children = (
 				6DFD09EC234FF1CA001CEAA0 /* ReportsLocalDataSource.swift */,
 				6DFD09EE234FF20D001CEAA0 /* ReportsLocalDataSourceImp.swift */,
+				6DFD0A1123500C57001CEAA0 /* ReportsLocalDataSourceMockup.swift */,
 			);
 			path = Reports;
 			sourceTree = "<group>";
@@ -882,6 +897,7 @@
 			isa = PBXGroup;
 			children = (
 				6DFD09F3234FF2C8001CEAA0 /* ReportsRepository.swift */,
+				6DFD0A0D2350096A001CEAA0 /* ReportsRepositoryMockup.swift */,
 			);
 			path = Reports;
 			sourceTree = "<group>";
@@ -891,6 +907,7 @@
 			children = (
 				6DFD09FA234FF50D001CEAA0 /* SaveReportUseCase.swift */,
 				6DFD09FC234FF567001CEAA0 /* SaveReportUseCaseImp.swift */,
+				6DFD0A072350066C001CEAA0 /* SaveReportUseCaseMockup.swift */,
 			);
 			path = SaveReportUseCase;
 			sourceTree = "<group>";
@@ -900,6 +917,7 @@
 			children = (
 				6DFD0A032350034C001CEAA0 /* GetReportsNumberUseCase.swift */,
 				6DFD0A0523500384001CEAA0 /* GetReportsNumberUseCaseImp.swift */,
+				6DFD0A09235006E0001CEAA0 /* GetReportsNumberUseCaseMockup.swift */,
 			);
 			path = GetReportsNumberUseCase;
 			sourceTree = "<group>";
@@ -1380,6 +1398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D0CD35B234D0EE700573048 /* StopsRemoteDaraSourceTest.swift in Sources */,
+				6DFD0A1423500D19001CEAA0 /* ReportsRepositoryTest.swift in Sources */,
 				6DEA8B42234956EB0041F4C1 /* TripsRepositoryTest.swift in Sources */,
 				6D08C5D12348C63900736E19 /* URLFactoryTest.swift in Sources */,
 				6DEA8B3B2349401C0041F4C1 /* TripsRemoteDataSourceTest.swift in Sources */,
@@ -1391,6 +1410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DFD0A1023500A31001CEAA0 /* GetReportsNumberUseCaseTest.swift in Sources */,
 				6D0CD368234D1A1E00573048 /* GetStopUseCaseTest.swift in Sources */,
 				6D1AFAF5234A86E600EF8131 /* GetTripsAvailableUseCaseTest.swift in Sources */,
 			);
@@ -1437,6 +1457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DFD0A0A235006E0001CEAA0 /* GetReportsNumberUseCaseMockup.swift in Sources */,
 				6D69352F234A807E0090D021 /* TripsRepository.swift in Sources */,
 				6D0CD360234D177E00573048 /* GetStopUseCase.swift in Sources */,
 				6D0C20442348EC4C00D8D20B /* Point.swift in Sources */,
@@ -1452,6 +1473,7 @@
 				6DAE5F3C2347F15500C6FFFA /* TripManagerError.swift in Sources */,
 				6D693534234A82560090D021 /* GetTripsAvailableUseCaseImp.swift in Sources */,
 				6DFD09FD234FF567001CEAA0 /* SaveReportUseCaseImp.swift in Sources */,
+				6DFD0A0E2350096A001CEAA0 /* ReportsRepositoryMockup.swift in Sources */,
 				6DFD09F4234FF2C8001CEAA0 /* ReportsRepository.swift in Sources */,
 				6D0CD364234D17F800573048 /* GetStopUseCaseMockup.swift in Sources */,
 				6D0C20482348ED6D00D8D20B /* Stop.swift in Sources */,
@@ -1459,6 +1481,7 @@
 				6D0CD351234D0C5200573048 /* StopsRepository.swift in Sources */,
 				6DFD09FB234FF50D001CEAA0 /* SaveReportUseCase.swift in Sources */,
 				6D72455B234CEAA7006751D7 /* GetTripsAvailableUseCaseMockup.swift in Sources */,
+				6DFD0A082350066C001CEAA0 /* SaveReportUseCaseMockup.swift in Sources */,
 				6DFD0A042350034C001CEAA0 /* GetReportsNumberUseCase.swift in Sources */,
 				6D693536234A83EF0090D021 /* GetTripsAvailableUseCase.swift in Sources */,
 			);
@@ -1469,6 +1492,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DEA8B3723493E4E0041F4C1 /* JSONReader.swift in Sources */,
+				6DFD0A1223500C57001CEAA0 /* ReportsLocalDataSourceMockup.swift in Sources */,
 				6DF6F6F9234E92DF00545708 /* StopsLocalDataSourceMockup.swift in Sources */,
 				6D0CD353234D0CB000573048 /* StopsRepositoryImp.swift in Sources */,
 				6D0C20392348E6D600D8D20B /* TripsRemoteDataSourceImp.swift in Sources */,
